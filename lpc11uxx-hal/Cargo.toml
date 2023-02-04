@@ -7,7 +7,37 @@ license = "GPL-3.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"]}
+cortex-m-rt = { version = "0.6.13" }
+defmt = { version = "0.3.2", optional = true }
+usb-device = { version = "0.2.9", optional = true }
+embedded-hal-stable = { package = "embedded-hal", version = "0.2.7" }
+embedded-hal-alpha = { package = "embedded-hal", version = "1.0.0-alpha.9"}
+bitfield-struct = "0.3.2"
+lpc-usbd-rom = { version = "0.1.0", path = "../lpc-usbd-rom" }
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
 
 [dependencies.lpc11uxx]
 path = "../lpc11uxx"
 version = "0.5.0"
+default-features = false
+features = ["rt", "syscon"]
+
+[features]
+default = ["all-drivers"]
+all-drivers = ["gpio", "ct", "gpio", "adc", "i2c", "flash", "pmu", "ssp", "usart", "usb", "wwdt"]
+
+defmt = ["dep:defmt", "usb-device?/defmt"]
+ct = ["lpc11uxx/ct16", "lpc11uxx/ct32"]
+gpio = ["lpc11uxx/gpio_port", "lpc11uxx/gpio_group_int", "lpc11uxx/gpio_pin_int", "lpc11uxx/iocon"]
+adc = ["lpc11uxx/adc"]
+i2c = ["gpio", "lpc11uxx/i2c"]
+flash = ["lpc11uxx/flashctrl"]
+pmu = ["lpc11uxx/pmu"]
+ssp = ["gpio", "lpc11uxx/ssp"]
+usart = ["gpio", "lpc11uxx/usart"]
+usb = ["gpio", "lpc11uxx/usb", "dep:usb-device"]
+wwdt = ["lpc11uxx/wwdt"]
+
+sram1 = []
+usbram = []
