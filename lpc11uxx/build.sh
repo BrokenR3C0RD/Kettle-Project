@@ -4,7 +4,7 @@ AUTHORS='"MasterR3C0RD <masterr3c0rd@epochal.quest"'
 SVD2RUST_FEATURES="--strict --generic_mod --atomics --feature_group"
 
 NAME=$(basename $PWD)
-VERSION=0.1.0
+VERSION=0.5.0
 SVD_FILE=$NAME.svd
 
 # clean up old files
@@ -35,6 +35,7 @@ derive_more = { version = "0.99.17", default_features = false, features = ["from
 portable-atomic = { version = "1", default-features = false }
 
 [features]
+default = ["all-groups"]
 rt = ["cortex-m-rt/device"]
 $FEATURE_GROUPS
 EOF
