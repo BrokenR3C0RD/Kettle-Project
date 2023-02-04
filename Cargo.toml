@@ -1,0 +1,2 @@
+[workspace]
+members = ["lpc11uxx", "lpc11uxx-hal", "pinnacle", "mpu6500", "swd-bitbang", "steam-controller-bsp"]

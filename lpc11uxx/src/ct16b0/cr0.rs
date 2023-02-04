@@ -1,0 +1,37 @@
+#[doc = "Register `CR0` reader"]
+pub struct R(crate::R<CR0_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CR0_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl From<crate::R<CR0_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<CR0_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Field `CAP` reader - Timer counter capture value."]
+pub type CAP_R = crate::FieldReader<u16, u16>;
+impl R {
+    #[doc = "Bits 0:15 - Timer counter capture value."]
+    #[inline(always)]
+    pub fn cap(&self) -> CAP_R {
+        CAP_R::new((self.bits & 0xffff) as u16)
+    }
+}
+#[doc = "Capture Register 0. CR0 is loaded with the value of TC when there is an event on the CT16B0_CAP0 input.\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cr0](index.html) module"]
+pub struct CR0_SPEC;
+impl crate::RegisterSpec for CR0_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cr0::R](R) reader structure"]
+impl crate::Readable for CR0_SPEC {
+    type Reader = R;
+}
+#[doc = "`reset()` method sets CR0 to value 0"]
+impl crate::Resettable for CR0_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
+}

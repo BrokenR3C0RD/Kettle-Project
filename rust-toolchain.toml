@@ -1,0 +1,5 @@
+[toolchain]
+channel = "nightly"
+components = ["rustc","cargo","llvm-tools-preview","rustfmt","rust-src"]
+targets = ["thumbv6m-none-eabi"]
+profile = "complete"

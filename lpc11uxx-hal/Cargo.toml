@@ -1,0 +1,12 @@
+[package]
+name = "lpc11uxx-hal"
+version = "0.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.lpc11uxx]
+path = "../lpc11uxx"
+version = "0.5.0"
