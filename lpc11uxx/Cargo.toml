@@ -3,6 +3,7 @@ name = "lpc11uxx"
 version = "0.5.0"
 authors = ["MasterR3C0RD <masterr3c0rd@epochal.quest"]
 edition = "2021"
+license = "GPL-3.0"
 
 [dependencies]
 critical-section = { version = "1.0", optional = true }
