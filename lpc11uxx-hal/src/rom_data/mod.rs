@@ -1,10 +1,17 @@
 //! Functions from the NXP BootROM.
+//! 
+//! These are implemented mainly for HAL code to use. You likely don't want to use any of this.
+//! 
+//! If you're certain you want to use them, however, please check out the NXP LPC11Uxx Reference Manual for usage.
 
 pub use lpc_usbd_rom as usbd;
 
 type IapFunction = extern "C" fn(*const u32, *mut u32) -> ();
 const IAP_LOCATION: *const IapFunction = 0x1FFF_1FF1 as _;
 
+/// A thunk for the IAP entry function.
+/// 
+/// You likely don't want to use this. If you're sure you do, see the Reference Manual for usage.
 #[inline(always)]
 pub unsafe fn iap_entry(command_param: &[u32], status_result: &mut [u32]) {
     assert!(command_param.len() >= 5);
@@ -12,6 +19,9 @@ pub unsafe fn iap_entry(command_param: &[u32], status_result: &mut [u32]) {
     (*IAP_LOCATION)(command_param.as_ptr(), status_result.as_mut_ptr())
 }
 
+/// The ROM driver table provides access to the different functions provided by the BootROM.
+/// 
+/// You likely don't want to use this. If you're sure you do, see the Reference Manual for usage.
 #[repr(C)]
 pub struct RomDriverTable {
     _usb: *const usbd::USBD_API_T,
@@ -24,6 +34,7 @@ pub struct RomDriverTable {
 unsafe impl Sync for RomDriverTable {}
 
 impl RomDriverTable {
+    /// Gets the pointer to the [RomDriverTable].
     pub const PTR: *const RomDriverTable = 0x1FFF_1FF8 as _;
 
     #[inline(always)]
@@ -47,6 +58,9 @@ impl RomDriverTable {
     }
 }
 
+/// Provides access to the ROM Power API.
+/// 
+/// You likely don't want to use this. If you're sure you do, see the Reference Manual for usage.
 #[repr(C)]
 pub struct PowerApiTable {
     _set_pll: *const extern "C" fn(*const u32, *mut u32),
@@ -76,6 +90,10 @@ pub struct DivReturn<T> {
     pub quot: T,
     pub rem: T,
 }
+
+/// Provdes access to the ROM division intrinsics.
+/// 
+/// You likely don't want to use this. If you're sure you do, see the Reference Manual for usage.
 
 #[repr(C)]
 pub struct RomDivTable {
