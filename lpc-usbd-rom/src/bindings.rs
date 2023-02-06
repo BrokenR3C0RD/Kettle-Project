@@ -728,19 +728,19 @@ pub const ErrorCode_t_ERR_CGU_DIV_SRC: ErrorCode_t = 327685;
 pub const ErrorCode_t_ERR_CGU_DIV_VAL: ErrorCode_t = 327686;
 pub const ErrorCode_t_ERR_CGU_SRC: ErrorCode_t = 327687;
 #[doc = " Error code returned by Boot ROM drivers/library functions\n\n  Error codes are a 32-bit value with :\n      - The 16 MSB contains the peripheral code number\n      - The 16 LSB contains an error code number associated to that peripheral"]
-pub type ErrorCode_t = ::std::os::raw::c_int;
-pub type __u_char = ::std::os::raw::c_uchar;
-pub type __u_short = ::std::os::raw::c_ushort;
-pub type __u_int = ::std::os::raw::c_uint;
-pub type __u_long = ::std::os::raw::c_ulong;
-pub type __int8_t = ::std::os::raw::c_schar;
-pub type __uint8_t = ::std::os::raw::c_uchar;
-pub type __int16_t = ::std::os::raw::c_short;
-pub type __uint16_t = ::std::os::raw::c_ushort;
-pub type __int32_t = ::std::os::raw::c_int;
-pub type __uint32_t = ::std::os::raw::c_uint;
-pub type __int64_t = ::std::os::raw::c_long;
-pub type __uint64_t = ::std::os::raw::c_ulong;
+pub type ErrorCode_t = ::core::ffi::c_int;
+pub type __u_char = ::core::ffi::c_uchar;
+pub type __u_short = ::core::ffi::c_ushort;
+pub type __u_int = ::core::ffi::c_uint;
+pub type __u_long = ::core::ffi::c_ulong;
+pub type __int8_t = ::core::ffi::c_schar;
+pub type __uint8_t = ::core::ffi::c_uchar;
+pub type __int16_t = ::core::ffi::c_short;
+pub type __uint16_t = ::core::ffi::c_ushort;
+pub type __int32_t = ::core::ffi::c_int;
+pub type __uint32_t = ::core::ffi::c_uint;
+pub type __int64_t = ::core::ffi::c_long;
+pub type __uint64_t = ::core::ffi::c_ulong;
 pub type __int_least8_t = __int8_t;
 pub type __uint_least8_t = __uint8_t;
 pub type __int_least16_t = __int16_t;
@@ -749,78 +749,53 @@ pub type __int_least32_t = __int32_t;
 pub type __uint_least32_t = __uint32_t;
 pub type __int_least64_t = __int64_t;
 pub type __uint_least64_t = __uint64_t;
-pub type __quad_t = ::std::os::raw::c_long;
-pub type __u_quad_t = ::std::os::raw::c_ulong;
-pub type __intmax_t = ::std::os::raw::c_long;
-pub type __uintmax_t = ::std::os::raw::c_ulong;
-pub type __dev_t = ::std::os::raw::c_ulong;
-pub type __uid_t = ::std::os::raw::c_uint;
-pub type __gid_t = ::std::os::raw::c_uint;
-pub type __ino_t = ::std::os::raw::c_ulong;
-pub type __ino64_t = ::std::os::raw::c_ulong;
-pub type __mode_t = ::std::os::raw::c_uint;
-pub type __nlink_t = ::std::os::raw::c_ulong;
-pub type __off_t = ::std::os::raw::c_long;
-pub type __off64_t = ::std::os::raw::c_long;
-pub type __pid_t = ::std::os::raw::c_int;
+pub type __quad_t = ::core::ffi::c_long;
+pub type __u_quad_t = ::core::ffi::c_ulong;
+pub type __intmax_t = ::core::ffi::c_long;
+pub type __uintmax_t = ::core::ffi::c_ulong;
+pub type __dev_t = ::core::ffi::c_ulong;
+pub type __uid_t = ::core::ffi::c_uint;
+pub type __gid_t = ::core::ffi::c_uint;
+pub type __ino_t = ::core::ffi::c_ulong;
+pub type __ino64_t = ::core::ffi::c_ulong;
+pub type __mode_t = ::core::ffi::c_uint;
+pub type __nlink_t = ::core::ffi::c_ulong;
+pub type __off_t = ::core::ffi::c_long;
+pub type __off64_t = ::core::ffi::c_long;
+pub type __pid_t = ::core::ffi::c_int;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __fsid_t {
-    pub __val: [::std::os::raw::c_int; 2usize],
+    pub __val: [::core::ffi::c_int; 2usize],
 }
-#[test]
-fn bindgen_test_layout___fsid_t() {
-    const UNINIT: ::std::mem::MaybeUninit<__fsid_t> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<__fsid_t>(),
-        8usize,
-        concat!("Size of: ", stringify!(__fsid_t))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<__fsid_t>(),
-        4usize,
-        concat!("Alignment of ", stringify!(__fsid_t))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).__val) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__fsid_t),
-            "::",
-            stringify!(__val)
-        )
-    );
-}
-pub type __clock_t = ::std::os::raw::c_long;
-pub type __rlim_t = ::std::os::raw::c_ulong;
-pub type __rlim64_t = ::std::os::raw::c_ulong;
-pub type __id_t = ::std::os::raw::c_uint;
-pub type __time_t = ::std::os::raw::c_long;
-pub type __useconds_t = ::std::os::raw::c_uint;
-pub type __suseconds_t = ::std::os::raw::c_long;
-pub type __suseconds64_t = ::std::os::raw::c_long;
-pub type __daddr_t = ::std::os::raw::c_int;
-pub type __key_t = ::std::os::raw::c_int;
-pub type __clockid_t = ::std::os::raw::c_int;
-pub type __timer_t = *mut ::std::os::raw::c_void;
-pub type __blksize_t = ::std::os::raw::c_long;
-pub type __blkcnt_t = ::std::os::raw::c_long;
-pub type __blkcnt64_t = ::std::os::raw::c_long;
-pub type __fsblkcnt_t = ::std::os::raw::c_ulong;
-pub type __fsblkcnt64_t = ::std::os::raw::c_ulong;
-pub type __fsfilcnt_t = ::std::os::raw::c_ulong;
-pub type __fsfilcnt64_t = ::std::os::raw::c_ulong;
-pub type __fsword_t = ::std::os::raw::c_long;
-pub type __ssize_t = ::std::os::raw::c_long;
-pub type __syscall_slong_t = ::std::os::raw::c_long;
-pub type __syscall_ulong_t = ::std::os::raw::c_ulong;
+pub type __clock_t = ::core::ffi::c_long;
+pub type __rlim_t = ::core::ffi::c_ulong;
+pub type __rlim64_t = ::core::ffi::c_ulong;
+pub type __id_t = ::core::ffi::c_uint;
+pub type __time_t = ::core::ffi::c_long;
+pub type __useconds_t = ::core::ffi::c_uint;
+pub type __suseconds_t = ::core::ffi::c_long;
+pub type __suseconds64_t = ::core::ffi::c_long;
+pub type __daddr_t = ::core::ffi::c_int;
+pub type __key_t = ::core::ffi::c_int;
+pub type __clockid_t = ::core::ffi::c_int;
+pub type __timer_t = *mut ::core::ffi::c_void;
+pub type __blksize_t = ::core::ffi::c_long;
+pub type __blkcnt_t = ::core::ffi::c_long;
+pub type __blkcnt64_t = ::core::ffi::c_long;
+pub type __fsblkcnt_t = ::core::ffi::c_ulong;
+pub type __fsblkcnt64_t = ::core::ffi::c_ulong;
+pub type __fsfilcnt_t = ::core::ffi::c_ulong;
+pub type __fsfilcnt64_t = ::core::ffi::c_ulong;
+pub type __fsword_t = ::core::ffi::c_long;
+pub type __ssize_t = ::core::ffi::c_long;
+pub type __syscall_slong_t = ::core::ffi::c_long;
+pub type __syscall_ulong_t = ::core::ffi::c_ulong;
 pub type __loff_t = __off64_t;
-pub type __caddr_t = *mut ::std::os::raw::c_char;
-pub type __intptr_t = ::std::os::raw::c_long;
-pub type __socklen_t = ::std::os::raw::c_uint;
-pub type __sig_atomic_t = ::std::os::raw::c_int;
+pub type __caddr_t = *mut ::core::ffi::c_char;
+pub type __intptr_t = ::core::ffi::c_long;
+pub type __socklen_t = ::core::ffi::c_uint;
+pub type __sig_atomic_t = ::core::ffi::c_int;
 pub type int_least8_t = __int_least8_t;
 pub type int_least16_t = __int_least16_t;
 pub type int_least32_t = __int_least32_t;
@@ -829,24 +804,24 @@ pub type uint_least8_t = __uint_least8_t;
 pub type uint_least16_t = __uint_least16_t;
 pub type uint_least32_t = __uint_least32_t;
 pub type uint_least64_t = __uint_least64_t;
-pub type int_fast8_t = ::std::os::raw::c_schar;
-pub type int_fast16_t = ::std::os::raw::c_long;
-pub type int_fast32_t = ::std::os::raw::c_long;
-pub type int_fast64_t = ::std::os::raw::c_long;
-pub type uint_fast8_t = ::std::os::raw::c_uchar;
-pub type uint_fast16_t = ::std::os::raw::c_ulong;
-pub type uint_fast32_t = ::std::os::raw::c_ulong;
-pub type uint_fast64_t = ::std::os::raw::c_ulong;
+pub type int_fast8_t = ::core::ffi::c_schar;
+pub type int_fast16_t = ::core::ffi::c_long;
+pub type int_fast32_t = ::core::ffi::c_long;
+pub type int_fast64_t = ::core::ffi::c_long;
+pub type uint_fast8_t = ::core::ffi::c_uchar;
+pub type uint_fast16_t = ::core::ffi::c_ulong;
+pub type uint_fast32_t = ::core::ffi::c_ulong;
+pub type uint_fast64_t = ::core::ffi::c_ulong;
 pub type intmax_t = __intmax_t;
 pub type uintmax_t = __uintmax_t;
 pub const Bool_FALSE: Bool = 0;
 pub const Bool_TRUE: Bool = 1;
 #[doc = " @brief Boolean Type definition"]
-pub type Bool = ::std::os::raw::c_uint;
+pub type Bool = ::core::ffi::c_uint;
 pub const FlagStatus_RESET: FlagStatus = 0;
 pub const FlagStatus_SET: FlagStatus = 1;
 #[doc = " @brief Flag Status and Interrupt Flag Status type definition"]
-pub type FlagStatus = ::std::os::raw::c_uint;
+pub type FlagStatus = ::core::ffi::c_uint;
 #[doc = " @brief Flag Status and Interrupt Flag Status type definition"]
 pub use self::FlagStatus as IntStatus;
 #[doc = " @brief Flag Status and Interrupt Flag Status type definition"]
@@ -854,23 +829,23 @@ pub use self::FlagStatus as SetState;
 pub const FunctionalState_DISABLE: FunctionalState = 0;
 pub const FunctionalState_ENABLE: FunctionalState = 1;
 #[doc = " @brief Functional State Definition"]
-pub type FunctionalState = ::std::os::raw::c_uint;
+pub type FunctionalState = ::core::ffi::c_uint;
 pub const Status_ERROR: Status = 0;
 pub const Status_SUCCESS: Status = 1;
 #[doc = " @ Status type definition"]
-pub type Status = ::std::os::raw::c_uint;
+pub type Status = ::core::ffi::c_uint;
 #[doc = "< None Blocking type"]
 pub const TRANSFER_BLOCK_T_NONE_BLOCKING: TRANSFER_BLOCK_T = 0;
 #[doc = "< Blocking type"]
 pub const TRANSFER_BLOCK_T_BLOCKING: TRANSFER_BLOCK_T = 1;
 #[doc = " Read/Write transfer type mode (Block or non-block)"]
-pub type TRANSFER_BLOCK_T = ::std::os::raw::c_uint;
+pub type TRANSFER_BLOCK_T = ::core::ffi::c_uint;
 #[doc = " Pointer to Function returning Void (any number of parameters)"]
-pub type PFV = ::std::option::Option<unsafe extern "C" fn()>;
+pub type PFV = ::core::option::Option<unsafe extern "C" fn()>;
 #[doc = " Pointer to Function returning int32_t (any number of parameters)"]
-pub type PFI = ::std::option::Option<unsafe extern "C" fn() -> i32>;
+pub type PFI = ::core::option::Option<unsafe extern "C" fn() -> i32>;
 #[doc = " LPC type for character type"]
-pub type CHAR = ::std::os::raw::c_char;
+pub type CHAR = ::core::ffi::c_char;
 #[doc = " LPC type for 8 bit unsigned value"]
 pub type UNS_8 = u8;
 #[doc = " LPC type for 8 bit signed value"]
@@ -902,31 +877,6 @@ pub struct _WB_T {
     #[doc = "< upper byte"]
     pub H: u8,
 }
-#[test]
-fn bindgen_test_layout__WB_T() {
-    const UNINIT: ::std::mem::MaybeUninit<_WB_T> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_WB_T>(),
-        2usize,
-        concat!("Size of: ", stringify!(_WB_T))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_WB_T>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_WB_T))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).L) as usize - ptr as usize },
-        0usize,
-        concat!("Offset of field: ", stringify!(_WB_T), "::", stringify!(L))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).H) as usize - ptr as usize },
-        1usize,
-        concat!("Offset of field: ", stringify!(_WB_T), "::", stringify!(H))
-    );
-}
 #[doc = " Structure to pack lower and upper byte to form 16 bit word."]
 pub type WB_T = _WB_T;
 #[doc = " Union of \\ref _WB_T struct and 16 bit word."]
@@ -938,41 +888,6 @@ pub union __WORD_BYTE {
     #[doc = "< data member to do 8 bit access"]
     pub WB: WB_T,
 }
-#[test]
-fn bindgen_test_layout___WORD_BYTE() {
-    const UNINIT: ::std::mem::MaybeUninit<__WORD_BYTE> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<__WORD_BYTE>(),
-        2usize,
-        concat!("Size of: ", stringify!(__WORD_BYTE))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<__WORD_BYTE>(),
-        1usize,
-        concat!("Alignment of ", stringify!(__WORD_BYTE))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).W) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__WORD_BYTE),
-            "::",
-            stringify!(W)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).WB) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__WORD_BYTE),
-            "::",
-            stringify!(WB)
-        )
-    );
-}
 #[doc = " Union of \\ref _WB_T struct and 16 bit word."]
 pub type WORD_BYTE = __WORD_BYTE;
 #[doc = " Structure to define 8 bit USB request."]
@@ -982,50 +897,37 @@ pub struct _BM_T {
     pub _bitfield_align_1: [u8; 0],
     pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize]>,
 }
-#[test]
-fn bindgen_test_layout__BM_T() {
-    assert_eq!(
-        ::std::mem::size_of::<_BM_T>(),
-        1usize,
-        concat!("Size of: ", stringify!(_BM_T))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_BM_T>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_BM_T))
-    );
-}
 impl _BM_T {
     #[inline]
     pub fn Recipient(&self) -> u8 {
-        unsafe { ::std::mem::transmute(self._bitfield_1.get(0usize, 5u8) as u8) }
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 5u8) as u8) }
     }
     #[inline]
     pub fn set_Recipient(&mut self, val: u8) {
         unsafe {
-            let val: u8 = ::std::mem::transmute(val);
+            let val: u8 = ::core::mem::transmute(val);
             self._bitfield_1.set(0usize, 5u8, val as u64)
         }
     }
     #[inline]
     pub fn Type(&self) -> u8 {
-        unsafe { ::std::mem::transmute(self._bitfield_1.get(5usize, 2u8) as u8) }
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(5usize, 2u8) as u8) }
     }
     #[inline]
     pub fn set_Type(&mut self, val: u8) {
         unsafe {
-            let val: u8 = ::std::mem::transmute(val);
+            let val: u8 = ::core::mem::transmute(val);
             self._bitfield_1.set(5usize, 2u8, val as u64)
         }
     }
     #[inline]
     pub fn Dir(&self) -> u8 {
-        unsafe { ::std::mem::transmute(self._bitfield_1.get(7usize, 1u8) as u8) }
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(7usize, 1u8) as u8) }
     }
     #[inline]
     pub fn set_Dir(&mut self, val: u8) {
         unsafe {
-            let val: u8 = ::std::mem::transmute(val);
+            let val: u8 = ::core::mem::transmute(val);
             self._bitfield_1.set(7usize, 1u8, val as u64)
         }
     }
@@ -1033,15 +935,15 @@ impl _BM_T {
     pub fn new_bitfield_1(Recipient: u8, Type: u8, Dir: u8) -> __BindgenBitfieldUnit<[u8; 1usize]> {
         let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize]> = Default::default();
         __bindgen_bitfield_unit.set(0usize, 5u8, {
-            let Recipient: u8 = unsafe { ::std::mem::transmute(Recipient) };
+            let Recipient: u8 = unsafe { ::core::mem::transmute(Recipient) };
             Recipient as u64
         });
         __bindgen_bitfield_unit.set(5usize, 2u8, {
-            let Type: u8 = unsafe { ::std::mem::transmute(Type) };
+            let Type: u8 = unsafe { ::core::mem::transmute(Type) };
             Type as u64
         });
         __bindgen_bitfield_unit.set(7usize, 1u8, {
-            let Dir: u8 = unsafe { ::std::mem::transmute(Dir) };
+            let Dir: u8 = unsafe { ::core::mem::transmute(Dir) };
             Dir as u64
         });
         __bindgen_bitfield_unit
@@ -1057,41 +959,6 @@ pub union _REQUEST_TYPE {
     pub B: u8,
     #[doc = "< bitfield structure access memeber"]
     pub BM: BM_T,
-}
-#[test]
-fn bindgen_test_layout__REQUEST_TYPE() {
-    const UNINIT: ::std::mem::MaybeUninit<_REQUEST_TYPE> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_REQUEST_TYPE>(),
-        1usize,
-        concat!("Size of: ", stringify!(_REQUEST_TYPE))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_REQUEST_TYPE>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_REQUEST_TYPE))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).B) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_REQUEST_TYPE),
-            "::",
-            stringify!(B)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).BM) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_REQUEST_TYPE),
-            "::",
-            stringify!(BM)
-        )
-    );
 }
 #[doc = " Union of \\ref _BM_T struct and 8 bit byte."]
 pub type REQUEST_TYPE = _REQUEST_TYPE;
@@ -1109,71 +976,6 @@ pub struct _USB_SETUP_PACKET {
     pub wIndex: WORD_BYTE,
     #[doc = "< This field specifies the length of the data\ntransferred during the second phase of the control\ntransfer."]
     pub wLength: u16,
-}
-#[test]
-fn bindgen_test_layout__USB_SETUP_PACKET() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_SETUP_PACKET> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_SETUP_PACKET>(),
-        8usize,
-        concat!("Size of: ", stringify!(_USB_SETUP_PACKET))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_SETUP_PACKET>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_SETUP_PACKET))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmRequestType) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_SETUP_PACKET),
-            "::",
-            stringify!(bmRequestType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bRequest) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_SETUP_PACKET),
-            "::",
-            stringify!(bRequest)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wValue) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_SETUP_PACKET),
-            "::",
-            stringify!(wValue)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wIndex) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_SETUP_PACKET),
-            "::",
-            stringify!(wIndex)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wLength) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_SETUP_PACKET),
-            "::",
-            stringify!(wLength)
-        )
-    );
 }
 #[doc = " USB Default Control Pipe Setup Packet"]
 pub type USB_SETUP_PACKET = _USB_SETUP_PACKET;
@@ -1210,162 +1012,6 @@ pub struct _USB_DEVICE_DESCRIPTOR {
     #[doc = "< Number of possible configurations."]
     pub bNumConfigurations: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_DEVICE_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_DEVICE_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_DEVICE_DESCRIPTOR>(),
-        18usize,
-        concat!("Size of: ", stringify!(_USB_DEVICE_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_DEVICE_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_DEVICE_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdUSB) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bcdUSB)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceClass) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceSubClass) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceSubClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceProtocol) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceProtocol)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bMaxPacketSize0) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bMaxPacketSize0)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).idVendor) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(idVendor)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).idProduct) as usize - ptr as usize },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(idProduct)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdDevice) as usize - ptr as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bcdDevice)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iManufacturer) as usize - ptr as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(iManufacturer)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iProduct) as usize - ptr as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(iProduct)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iSerialNumber) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(iSerialNumber)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumConfigurations) as usize - ptr as usize },
-        17usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_DESCRIPTOR),
-            "::",
-            stringify!(bNumConfigurations)
-        )
-    );
-}
 #[doc = " USB Standard Device Descriptor"]
 pub type USB_DEVICE_DESCRIPTOR = _USB_DEVICE_DESCRIPTOR;
 #[doc = " USB 2.0 Device Qualifier Descriptor"]
@@ -1391,115 +1037,6 @@ pub struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
     #[doc = "< Reserved for future use, must be zero"]
     pub bReserved: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_DEVICE_QUALIFIER_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_DEVICE_QUALIFIER_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_DEVICE_QUALIFIER_DESCRIPTOR>(),
-        10usize,
-        concat!("Size of: ", stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_DEVICE_QUALIFIER_DESCRIPTOR>(),
-        1usize,
-        concat!(
-            "Alignment of ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdUSB) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bcdUSB)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceClass) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceSubClass) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceSubClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDeviceProtocol) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bDeviceProtocol)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bMaxPacketSize0) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bMaxPacketSize0)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumConfigurations) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bNumConfigurations)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bReserved) as usize - ptr as usize },
-        9usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DEVICE_QUALIFIER_DESCRIPTOR),
-            "::",
-            stringify!(bReserved)
-        )
-    );
-}
 #[doc = " USB 2.0 Device Qualifier Descriptor"]
 pub type USB_DEVICE_QUALIFIER_DESCRIPTOR = _USB_DEVICE_QUALIFIER_DESCRIPTOR;
 #[doc = " USB Standard Configuration Descriptor"]
@@ -1523,102 +1060,6 @@ pub struct _USB_CONFIGURATION_DESCRIPTOR {
     #[doc = "< Maximum power consumption of the USB\ndevice from the bus in this specific\nconfiguration when the device is fully\noperational. Expressed in 2 mA units\n(i.e., 50 = 100 mA). \\n\nNote: A device configuration reports whether\nthe configuration is bus-powered or selfpowered.\nDevice status reports whether the\ndevice is currently self-powered. If a device is\ndisconnected from its external power source, it\nupdates device status to indicate that it is no\nlonger self-powered. \\n\nA device may not increase its power draw\nfrom the bus, when it loses its external power\nsource, beyond the amount reported by its\nconfiguration. \\n\nIf a device can continue to operate when\ndisconnected from its external power source, it\ncontinues to do so. If the device cannot\ncontinue to operate, it fails operations it can\nno longer support. The USB System Software\nmay determine the cause of the failure by\nchecking the status and noting the loss of the\ndevice�s power source."]
     pub bMaxPower: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_CONFIGURATION_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_CONFIGURATION_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_CONFIGURATION_DESCRIPTOR>(),
-        9usize,
-        concat!("Size of: ", stringify!(_USB_CONFIGURATION_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_CONFIGURATION_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_CONFIGURATION_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wTotalLength) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(wTotalLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumInterfaces) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bNumInterfaces)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bConfigurationValue) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bConfigurationValue)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iConfiguration) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(iConfiguration)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmAttributes) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bmAttributes)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bMaxPower) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CONFIGURATION_DESCRIPTOR),
-            "::",
-            stringify!(bMaxPower)
-        )
-    );
-}
 #[doc = " USB Standard Configuration Descriptor"]
 pub type USB_CONFIGURATION_DESCRIPTOR = _USB_CONFIGURATION_DESCRIPTOR;
 #[doc = " USB Standard Interface Association Descriptor"]
@@ -1641,101 +1082,6 @@ pub struct _USB_IAD_DESCRIPTOR {
     pub bFunctionProtocol: u8,
     #[doc = "< Index of string descriptor describing this function."]
     pub iFunction: u8,
-}
-#[test]
-fn bindgen_test_layout__USB_IAD_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_IAD_DESCRIPTOR> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_IAD_DESCRIPTOR>(),
-        8usize,
-        concat!("Size of: ", stringify!(_USB_IAD_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_IAD_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_IAD_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFirstInterface) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bFirstInterface)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterfaceCount) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bInterfaceCount)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionClass) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionSubClass) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionSubClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionProtocol) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionProtocol)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iFunction) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_IAD_DESCRIPTOR),
-            "::",
-            stringify!(iFunction)
-        )
-    );
 }
 #[doc = " USB Standard Interface Association Descriptor"]
 pub type USB_IAD_DESCRIPTOR = _USB_IAD_DESCRIPTOR;
@@ -1762,112 +1108,6 @@ pub struct _USB_INTERFACE_DESCRIPTOR {
     #[doc = "< Index of string descriptor describing this interface"]
     pub iInterface: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_INTERFACE_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_INTERFACE_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_INTERFACE_DESCRIPTOR>(),
-        9usize,
-        concat!("Size of: ", stringify!(_USB_INTERFACE_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_INTERFACE_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_INTERFACE_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterfaceNumber) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bInterfaceNumber)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bAlternateSetting) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bAlternateSetting)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumEndpoints) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bNumEndpoints)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterfaceClass) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bInterfaceClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterfaceSubClass) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bInterfaceSubClass)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterfaceProtocol) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(bInterfaceProtocol)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iInterface) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_INTERFACE_DESCRIPTOR),
-            "::",
-            stringify!(iInterface)
-        )
-    );
-}
 #[doc = " USB Standard Interface Descriptor"]
 pub type USB_INTERFACE_DESCRIPTOR = _USB_INTERFACE_DESCRIPTOR;
 #[doc = " USB Standard Endpoint Descriptor"]
@@ -1887,82 +1127,6 @@ pub struct _USB_ENDPOINT_DESCRIPTOR {
     #[doc = "< Interval for polling endpoint for data transfers.\nExpressed in frames or microframes depending on the\ndevice operating speed (i.e., either 1 millisecond or\n125 �s units).\n\\li For full-/high-speed isochronous endpoints, this value\nmust be in the range from 1 to 16. The bInterval value\nis used as the exponent for a \\f$ 2^(bInterval-1) \\f$ value; e.g., a\nbInterval of 4 means a period of 8 (\\f$ 2^(4-1) \\f$).\n\\li For full-/low-speed interrupt endpoints, the value of\nthis field may be from 1 to 255.\n\\li For high-speed interrupt endpoints, the bInterval value\nis used as the exponent for a \\f$ 2^(bInterval-1) \\f$ value; e.g., a\nbInterval of 4 means a period of 8 (\\f$ 2^(4-1) \\f$) . This value\nmust be from 1 to 16.\n\\li For high-speed bulk/control OUT endpoints, the\nbInterval must specify the maximum NAK rate of the\nendpoint. A value of 0 indicates the endpoint never\nNAKs. Other values indicate at most 1 NAK each\nbInterval number of microframes. This value must be\nin the range from 0 to 255. \\n\nRefer to Chapter 5 of USB 2.0 specification for more information."]
     pub bInterval: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_ENDPOINT_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_ENDPOINT_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_ENDPOINT_DESCRIPTOR>(),
-        7usize,
-        concat!("Size of: ", stringify!(_USB_ENDPOINT_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_ENDPOINT_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_ENDPOINT_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bEndpointAddress) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(bEndpointAddress)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmAttributes) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(bmAttributes)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wMaxPacketSize) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(wMaxPacketSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bInterval) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_ENDPOINT_DESCRIPTOR),
-            "::",
-            stringify!(bInterval)
-        )
-    );
-}
 #[doc = " USB Standard Endpoint Descriptor"]
 pub type USB_ENDPOINT_DESCRIPTOR = _USB_ENDPOINT_DESCRIPTOR;
 #[doc = " USB String Descriptor"]
@@ -1976,52 +1140,6 @@ pub struct _USB_STRING_DESCRIPTOR {
     #[doc = "< UNICODE encoded string"]
     pub bString: u16,
 }
-#[test]
-fn bindgen_test_layout__USB_STRING_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_STRING_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_STRING_DESCRIPTOR>(),
-        4usize,
-        concat!("Size of: ", stringify!(_USB_STRING_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_STRING_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_STRING_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_STRING_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_STRING_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bString) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_STRING_DESCRIPTOR),
-            "::",
-            stringify!(bString)
-        )
-    );
-}
 #[doc = " USB String Descriptor"]
 pub type USB_STRING_DESCRIPTOR = _USB_STRING_DESCRIPTOR;
 #[doc = " USB Common Descriptor"]
@@ -2032,42 +1150,6 @@ pub struct _USB_COMMON_DESCRIPTOR {
     pub bLength: u8,
     #[doc = "< Descriptor Type"]
     pub bDescriptorType: u8,
-}
-#[test]
-fn bindgen_test_layout__USB_COMMON_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_COMMON_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_COMMON_DESCRIPTOR>(),
-        2usize,
-        concat!("Size of: ", stringify!(_USB_COMMON_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_COMMON_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_COMMON_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_COMMON_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_COMMON_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
 }
 #[doc = " USB Common Descriptor"]
 pub type USB_COMMON_DESCRIPTOR = _USB_COMMON_DESCRIPTOR;
@@ -2092,116 +1174,21 @@ pub struct _USB_OTHER_SPEED_CONFIGURATION {
     #[doc = "< Same as Configuration descriptor"]
     pub bMaxPower: u8,
 }
-#[test]
-fn bindgen_test_layout__USB_OTHER_SPEED_CONFIGURATION() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_OTHER_SPEED_CONFIGURATION> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_OTHER_SPEED_CONFIGURATION>(),
-        9usize,
-        concat!("Size of: ", stringify!(_USB_OTHER_SPEED_CONFIGURATION))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_OTHER_SPEED_CONFIGURATION>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_OTHER_SPEED_CONFIGURATION))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wTotalLength) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(wTotalLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumInterfaces) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bNumInterfaces)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bConfigurationValue) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bConfigurationValue)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).IConfiguration) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(IConfiguration)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmAttributes) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bmAttributes)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bMaxPower) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_OTHER_SPEED_CONFIGURATION),
-            "::",
-            stringify!(bMaxPower)
-        )
-    );
-}
 #[doc = " USB Other Speed Configuration"]
 pub type USB_OTHER_SPEED_CONFIGURATION = _USB_OTHER_SPEED_CONFIGURATION;
 #[doc = " \\ingroup USBD_Core\n USB device stack/module handle."]
-pub type USBD_HANDLE_T = *mut ::std::os::raw::c_void;
+pub type USBD_HANDLE_T = *mut ::core::ffi::c_void;
 #[doc = " \\ingroup USBD_Core\n  \\typedef USB_CB_T\n  \\brief USB device stack's event callback function type.\n\n  The USB device stack exposes several event triggers through callback to application layer. The\n  application layer can register methods to be called when such USB event happens.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  Other error conditions.\n"]
-pub type USB_CB_T = ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T) -> ErrorCode_t>;
+pub type USB_CB_T =
+    ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T) -> ErrorCode_t>;
 #[doc = " \\ingroup USBD_Core\n  \\typedef USB_PARAM_CB_T\n  \\brief USB device stack's event callback function type.\n\n  The USB device stack exposes several event triggers through callback to application layer. The\n  application layer can register methods to be called when such USB event happens.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] param1 Extra information related to the event.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
 pub type USB_PARAM_CB_T =
-    ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, param1: u32) -> ErrorCode_t>;
+    ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, param1: u32) -> ErrorCode_t>;
 #[doc = " \\ingroup USBD_Core\n  \\typedef USB_EP_HANDLER_T\n  \\brief USBD setup request and endpoint event handler type.\n\n  The application layer should define the custom class's EP0 handler with function signature.\n  The stack calls all the registered class handlers on any EP0 event before going through default\n  handling of the event. This gives the class handlers to implement class specific request handlers\n  and also to override the default stack handling for a particular event targeted to the interface.\n  If an event is not handled by the callback the function should return ERR_USBD_UNHANDLED. For all\n  other return codes the stack assumes that callback has taken care of the event and hence will not\n  process the event any further and issues a STALL condition on EP0 indicating error to the host.\n  \\n\n  For endpoint interrupt handler the return value is ignored by the stack.\n  \\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-pub type USB_EP_HANDLER_T = ::std::option::Option<
+pub type USB_EP_HANDLER_T = ::core::option::Option<
     unsafe extern "C" fn(
         hUsb: USBD_HANDLE_T,
-        data: *mut ::std::os::raw::c_void,
+        data: *mut ::core::ffi::c_void,
         event: u32,
     ) -> ErrorCode_t,
 >;
@@ -2219,71 +1206,6 @@ pub struct _USB_CORE_DESCS_T {
     pub high_speed_desc: *mut u8,
     #[doc = "< Pointer to USB device qualifier descriptor. For\n full-speed only implementation this pointer should\n be set to null (0)."]
     pub device_qualifier: *mut u8,
-}
-#[test]
-fn bindgen_test_layout__USB_CORE_DESCS_T() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_CORE_DESCS_T> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_CORE_DESCS_T>(),
-        40usize,
-        concat!("Size of: ", stringify!(_USB_CORE_DESCS_T))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_CORE_DESCS_T>(),
-        8usize,
-        concat!("Alignment of ", stringify!(_USB_CORE_DESCS_T))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).device_desc) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CORE_DESCS_T),
-            "::",
-            stringify!(device_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).string_desc) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CORE_DESCS_T),
-            "::",
-            stringify!(string_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).full_speed_desc) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CORE_DESCS_T),
-            "::",
-            stringify!(full_speed_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).high_speed_desc) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CORE_DESCS_T),
-            "::",
-            stringify!(high_speed_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).device_qualifier) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_CORE_DESCS_T),
-            "::",
-            stringify!(device_qualifier)
-        )
-    );
 }
 #[doc = " \\ingroup USBD_Core\n  \\brief USB descriptors data structure.\n  \\ingroup USBD_Core\n\n  \\details  This structure is used as part of USB device stack initialization\n  parameter structure \\ref USBD_API_INIT_PARAM_T. This structure contains\n  pointers to various descriptor arrays needed by the stack. These descriptors\n  are reported to USB host as part of enumerations process.\n\n  \\note All descriptor pointers assigned in this structure should be on 4 byte\n  aligned address boundary."]
 pub type USB_CORE_DESCS_T = _USB_CORE_DESCS_T;
@@ -2324,205 +1246,10 @@ pub struct USBD_API_INIT_PARAM {
     pub USB_Feature_Event: USB_CB_T,
     #[doc = " Reserved parameter for future use. should be set to zero."]
     pub virt_to_phys:
-        ::std::option::Option<unsafe extern "C" fn(vaddr: *mut ::std::os::raw::c_void) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(vaddr: *mut ::core::ffi::c_void) -> u32>,
     #[doc = " Reserved parameter for future use. should be set to zero."]
     pub cache_flush:
-        ::std::option::Option<unsafe extern "C" fn(start_adr: *mut u32, end_adr: *mut u32)>,
-}
-#[test]
-fn bindgen_test_layout_USBD_API_INIT_PARAM() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_API_INIT_PARAM> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_API_INIT_PARAM>(),
-        120usize,
-        concat!("Size of: ", stringify!(USBD_API_INIT_PARAM))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_API_INIT_PARAM>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_API_INIT_PARAM))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).usb_reg_base) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(usb_reg_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_base) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(mem_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_size) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(mem_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).max_num_ep) as usize - ptr as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(max_num_ep)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).pad0) as usize - ptr as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(pad0)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Reset_Event) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Reset_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Suspend_Event) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Suspend_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Resume_Event) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Resume_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).reserved_sbz) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(reserved_sbz)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_SOF_Event) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_SOF_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_WakeUpCfg) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_WakeUpCfg)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Power_Event) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Power_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Error_Event) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Error_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Configure_Event) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Configure_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Interface_Event) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Interface_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).USB_Feature_Event) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(USB_Feature_Event)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).virt_to_phys) as usize - ptr as usize },
-        104usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(virt_to_phys)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).cache_flush) as usize - ptr as usize },
-        112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API_INIT_PARAM),
-            "::",
-            stringify!(cache_flush)
-        )
-    );
+        ::core::option::Option<unsafe extern "C" fn(start_adr: *mut u32, end_adr: *mut u32)>,
 }
 #[doc = " \\brief USB device stack initialization parameter data structure.\n  \\ingroup USBD_Core\n\n  \\details  This data structure is used to pass initialization parameters to the\n  USB device stack's init function.\n"]
 pub type USBD_API_INIT_PARAM_T = USBD_API_INIT_PARAM;
@@ -2531,129 +1258,34 @@ pub type USBD_API_INIT_PARAM_T = USBD_API_INIT_PARAM;
 #[derive(Debug, Copy, Clone)]
 pub struct USBD_CORE_API {
     #[doc = " \\fn ErrorCode_t RegisterClassHandler(USBD_HANDLE_T hUsb, USB_EP_HANDLER_T pfn, void* data)\n  Function to register class specific EP0 event handler with USB device stack.\n\n  The application layer uses this function when it has to register the custom class's EP0 handler.\n  The stack calls all the registered class handlers on any EP0 event before going through default\n  handling of the event. This gives the class handlers to implement class specific request handlers\n  and also to override the default stack handling for a particular event targeted to the interface.\n  Check \\ref USB_EP_HANDLER_T for more details on how the callback function should be implemented. Also\n  application layer could use this function to register EP0 handler which responds to vendor specific\n  requests.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] pfn  Class specific EP0 handler function.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_TOO_MANY_CLASS_HDLR(0x0004000c)  The number of class handlers registered is\ngreater than the number of handlers allowed by the stack.\n"]
-    pub RegisterClassHandler: ::std::option::Option<
+    pub RegisterClassHandler: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
             pfn: USB_EP_HANDLER_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
         ) -> ErrorCode_t,
     >,
     #[doc = " \\fn ErrorCode_t RegisterEpHandler(USBD_HANDLE_T hUsb, uint32_t ep_index, USB_EP_HANDLER_T pfn, void* data)\n  Function to register interrupt/event handler for the requested endpoint with USB device stack.\n\n  The application layer uses this function to register the endpoint event handler.\n  The stack calls all the registered endpoint handlers when\n  - USB_EVT_OUT or USB_EVT_OUT_NAK events happen for OUT endpoint.\n  - USB_EVT_IN or USB_EVT_IN_NAK events happen for IN endpoint.\n  Check USB_EP_HANDLER_T for more details on how the callback function should be implemented.\n  \\note By default endpoint _NAK events are not enabled. Application should call \\ref USBD_HW_API_T::EnableEvent\n  for the corresponding endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] ep_index  Endpoint index. Computed as\n                       - For OUT endpoints = 2 * endpoint number eg. for EP2_OUT it is 4.\n                       - For IN endopoints = (2 * endpoint number) + 1 eg. for EP2_IN it is 5.\n  \\param[in] pfn  Endpoint event handler function.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_API_INVALID_PARAM2  ep_index is outside the boundary ( < 2 * USBD_API_INIT_PARAM_T::max_num_ep).\n"]
-    pub RegisterEpHandler: ::std::option::Option<
+    pub RegisterEpHandler: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
             ep_index: u32,
             pfn: USB_EP_HANDLER_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
         ) -> ErrorCode_t,
     >,
     #[doc = " \\fn void SetupStage(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in setup state.\n\n  This function is called by USB stack and the application layer to\n  set the EP0 state machine in setup state. This function will read\n  the setup packet received from USB host into stack's buffer.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub SetupStage: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub SetupStage: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void DataInStage(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in data_in state.\n\n  This function is called by USB stack and the application layer to\n  set the EP0 state machine in data_in state. This function will write\n  the data present in EP0Data buffer to EP0 FIFO for transmission to host.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub DataInStage: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub DataInStage: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void DataOutStage(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in data_out state.\n\n  This function is called by USB stack and the application layer to\n  set the EP0 state machine in data_out state. This function will read\n  the control data (EP0 out packets) received from USB host into EP0Data buffer.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub DataOutStage: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub DataOutStage: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void StatusInStage(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in status_in state.\n\n  This function is called by USB stack and the application layer to\n  set the EP0 state machine in status_in state. This function will send\n  zero length IN packet on EP0 to host, indicating positive status.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub StatusInStage: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub StatusInStage: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void StatusOutStage(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in status_out state.\n\n  This function is called by USB stack and the application layer to\n  set the EP0 state machine in status_out state. This function will read\n  the zero length OUT packet received from USB host on EP0.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub StatusOutStage: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub StatusOutStage: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void StallEp0(USBD_HANDLE_T hUsb)\n  Function to set EP0 state machine in stall state.\n\n  This function is called by USB stack and the application layer to\n  generate STALL signaling on EP0 endpoint. This function will also\n  reset the EP0Data buffer.\n  \\n\n  \\note This interface is provided to users to invoke this function in other\n  scenarios which are not handle by current stack. In most user applications\n  this function is not called directly.Also this function can be used by\n  users who are selectively modifying the USB device stack's standard handlers\n  through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub StallEp0: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
-}
-#[test]
-fn bindgen_test_layout_USBD_CORE_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_CORE_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_CORE_API>(),
-        64usize,
-        concat!("Size of: ", stringify!(USBD_CORE_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_CORE_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_CORE_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).RegisterClassHandler) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(RegisterClassHandler)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).RegisterEpHandler) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(RegisterEpHandler)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetupStage) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(SetupStage)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DataInStage) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(DataInStage)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DataOutStage) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(DataOutStage)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).StatusInStage) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(StatusInStage)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).StatusOutStage) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(StatusOutStage)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).StallEp0) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CORE_API),
-            "::",
-            stringify!(StallEp0)
-        )
-    );
+    pub StallEp0: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
 }
 #[doc = " \\brief USBD stack Core API functions structure.\n  \\ingroup USBD_Core\n\n  \\details  This module exposes functions which interact directly with USB device stack's core layer.\n  The application layer uses this component when it has to implement custom class function driver or\n  standard class function driver which is not part of the current USB device stack.\n  The functions exposed by this interface are to register class specific EP0 handlers and corresponding\n  utility functions to manipulate EP0 state machine of the stack. This interface also exposes\n  function to register custom endpoint interrupt handler.\n"]
 pub type USBD_CORE_API_T = USBD_CORE_API;
@@ -2692,16 +1324,16 @@ pub const USBD_EVENT_T_USB_EVT_DEV_STATE: USBD_EVENT_T = 16;
 #[doc = "< 17  Device error events"]
 pub const USBD_EVENT_T_USB_EVT_DEV_ERROR: USBD_EVENT_T = 17;
 #[doc = " \\ingroup USBD_HW\n  USB Endpoint/class handler Callback Events."]
-pub type USBD_EVENT_T = ::std::os::raw::c_uint;
+pub type USBD_EVENT_T = ::core::ffi::c_uint;
 #[doc = "  \\brief Hardware API functions structure.\n  \\ingroup USBD_HW\n\n  This module exposes functions which interact directly with USB device controller hardware.\n"]
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct USBD_HW_API {
     #[doc = " \\fn uint32_t GetMemSize(USBD_API_INIT_PARAM_T* param)\n  Function to determine the memory required by the USB device stack's DCD and core layers.\n\n  This function is called by application layer before calling pUsbApi->hw->Init(), to allocate memory used\n  by DCD and core layers. The application should allocate the memory which is accessible by USB\n  controller/DMA controller.\n  \\note Some memory areas are not accessible by all bus masters.\n\n  \\param[in] param Structure containing USB device stack initialization parameters.\n  \\return Returns the required memory size in bytes."]
     pub GetMemSize:
-        ::std::option::Option<unsafe extern "C" fn(param: *mut USBD_API_INIT_PARAM_T) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(param: *mut USBD_API_INIT_PARAM_T) -> u32>,
     #[doc = " \\fn ErrorCode_t Init(USBD_HANDLE_T* phUsb, USB_CORE_DESCS_T* pDesc, USBD_API_INIT_PARAM_T* param)\n  Function to initialize USB device stack's DCD and core layers.\n\n  This function is called by application layer to initialize USB hardware and core layers.\n  On successful initialization the function returns a handle to USB device stack which should\n  be passed to the rest of the functions.\n\n  \\param[in,out] phUsb Pointer to the USB device stack handle of type USBD_HANDLE_T.\n  \\param[in]  pDesc Structure containing pointers to various descriptor arrays needed by the stack.\n                    These descriptors are reported to USB host as part of enumerations process.\n  \\param[in]  param Structure containing USB device stack initialization parameters.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK(0) On success\n          \\retval ERR_USBD_BAD_MEM_BUF(0x0004000b) When insufficient memory buffer is passed or memory\n                                             is not aligned on 2048 boundary."]
-    pub Init: ::std::option::Option<
+    pub Init: ::core::option::Option<
         unsafe extern "C" fn(
             phUsb: *mut USBD_HANDLE_T,
             pDesc: *mut USB_CORE_DESCS_T,
@@ -2709,58 +1341,58 @@ pub struct USBD_HW_API {
         ) -> ErrorCode_t,
     >,
     #[doc = " \\fn void Connect(USBD_HANDLE_T hUsb, uint32_t con)\n  Function to make USB device visible/invisible on the USB bus.\n\n  This function is called after the USB initialization. This function uses the soft connect\n  feature to make the device visible on the USB bus. This function is called only after the\n  application is ready to handle the USB data. The enumeration process is started by the\n  host after the device detection. The driver handles the enumeration process according to\n  the USB descriptors passed in the USB initialization function.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] con  States whether to connect (1) or to disconnect (0).\n  \\return Nothing."]
-    pub Connect: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, con: u32)>,
+    pub Connect: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, con: u32)>,
     #[doc = " \\fn void ISR(USBD_HANDLE_T hUsb)\n  Function to USB device controller interrupt events.\n\n  When the user application is active the interrupt handlers are mapped in the user flash\n  space. The user application must provide an interrupt handler for the USB interrupt and\n  call this function in the interrupt handler routine. The driver interrupt handler takes\n  appropriate action according to the data received on the USB bus.\n\n  \\param[in]  hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub ISR: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub ISR: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void Reset(USBD_HANDLE_T hUsb)\n  Function to Reset USB device stack and hardware controller.\n\n  Reset USB device stack and hardware controller. Disables all endpoints except EP0.\n  Clears all pending interrupts and resets endpoint transfer queues.\n  This function is called internally by pUsbApi->hw->init() and from reset event.\n\n  \\param[in]  hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub Reset: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub Reset: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void ForceFullSpeed(USBD_HANDLE_T hUsb, uint32_t cfg)\n  Function to force high speed USB device to operate in full speed mode.\n\n  This function is useful for testing the behavior of current device when connected\n  to a full speed only hosts.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] cfg  When 1 - set force full-speed or\n                       0 - clear force full-speed.\n  \\return Nothing."]
-    pub ForceFullSpeed: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
+    pub ForceFullSpeed: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
     #[doc = " \\fn void WakeUpCfg(USBD_HANDLE_T hUsb, uint32_t cfg)\n  Function to configure USB device controller to wake-up host on remote events.\n\n  This function is called by application layer to configure the USB device controller\n  to wakeup on remote events. It is recommended to call this function from users's\n  USB_WakeUpCfg() callback routine registered with stack.\n  \\note User's USB_WakeUpCfg() is registered with stack by setting the USB_WakeUpCfg member\n  of USBD_API_INIT_PARAM_T structure before calling pUsbApi->hw->Init() routine.\n  Certain USB device controllers needed to keep some clocks always on to generate\n  resume signaling through pUsbApi->hw->WakeUp(). This hook is provided to support\n  such controllers. In most controllers cases this is an empty routine.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] cfg  When 1 - Configure controller to wake on remote events or\n                       0 - Configure controller not to wake on remote events.\n  \\return Nothing."]
-    pub WakeUpCfg: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
+    pub WakeUpCfg: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
     #[doc = " \\fn void SetAddress(USBD_HANDLE_T hUsb, uint32_t adr)\n  Function to set USB address assigned by host in device controller hardware.\n\n  This function is called automatically when USB_REQUEST_SET_ADDRESS request is received\n  by the stack from USB host.\n  This interface is provided to users to invoke this function in other scenarios which are not\n  handle by current stack. In most user applications this function is not called directly.\n  Also this function can be used by users who are selectively modifying the USB device stack's\n  standard handlers through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] adr  USB bus Address to which the device controller should respond. Usually\n                  assigned by the USB host.\n  \\return Nothing."]
-    pub SetAddress: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, adr: u32)>,
+    pub SetAddress: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, adr: u32)>,
     #[doc = " \\fn void Configure(USBD_HANDLE_T hUsb, uint32_t cfg)\n  Function to configure device controller hardware with selected configuration.\n\n  This function is called automatically when USB_REQUEST_SET_CONFIGURATION request is received\n  by the stack from USB host.\n  This interface is provided to users to invoke this function in other scenarios which are not\n  handle by current stack. In most user applications this function is not called directly.\n  Also this function can be used by users who are selectively modifying the USB device stack's\n  standard handlers through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] cfg  Configuration index.\n  \\return Nothing."]
-    pub Configure: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
+    pub Configure: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, cfg: u32)>,
     #[doc = " \\fn void ConfigEP(USBD_HANDLE_T hUsb, USB_ENDPOINT_DESCRIPTOR *pEPD)\n  Function to configure USB Endpoint according to descriptor.\n\n  This function is called automatically when USB_REQUEST_SET_CONFIGURATION request is received\n  by the stack from USB host. All the endpoints associated with the selected configuration\n  are configured.\n  This interface is provided to users to invoke this function in other scenarios which are not\n  handle by current stack. In most user applications this function is not called directly.\n  Also this function can be used by users who are selectively modifying the USB device stack's\n  standard handlers through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] pEPD Endpoint descriptor structure defined in USB 2.0 specification.\n  \\return Nothing."]
-    pub ConfigEP: ::std::option::Option<
+    pub ConfigEP: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, pEPD: *mut USB_ENDPOINT_DESCRIPTOR),
     >,
     #[doc = " \\fn void DirCtrlEP(USBD_HANDLE_T hUsb, uint32_t dir)\n  Function to set direction for USB control endpoint EP0.\n\n  This function is called automatically by the stack on need basis.\n  This interface is provided to users to invoke this function in other scenarios which are not\n  handle by current stack. In most user applications this function is not called directly.\n  Also this function can be used by users who are selectively modifying the USB device stack's\n  standard handlers through callback interface exposed by the stack.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] cfg  When 1 - Set EP0 in IN transfer mode\n                       0 - Set EP0 in OUT transfer mode\n  \\return Nothing."]
-    pub DirCtrlEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, dir: u32)>,
+    pub DirCtrlEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, dir: u32)>,
     #[doc = " \\fn void EnableEP(USBD_HANDLE_T hUsb, uint32_t EPNum)\n  Function to enable selected USB endpoint.\n\n  This function enables interrupts on selected endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\return Nothing."]
-    pub EnableEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
+    pub EnableEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
     #[doc = " \\fn void DisableEP(USBD_HANDLE_T hUsb, uint32_t EPNum)\n  Function to disable selected USB endpoint.\n\n  This function disables interrupts on selected endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\return Nothing."]
-    pub DisableEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
+    pub DisableEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
     #[doc = " \\fn void ResetEP(USBD_HANDLE_T hUsb, uint32_t EPNum)\n  Function to reset selected USB endpoint.\n\n  This function flushes the endpoint buffers and resets data toggle logic.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\return Nothing."]
-    pub ResetEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
+    pub ResetEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
     #[doc = " \\fn void SetStallEP(USBD_HANDLE_T hUsb, uint32_t EPNum)\n  Function to STALL selected USB endpoint.\n\n  Generates STALL signaling for requested endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\return Nothing."]
-    pub SetStallEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
+    pub SetStallEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
     #[doc = " \\fn void ClrStallEP(USBD_HANDLE_T hUsb, uint32_t EPNum)\n  Function to clear STALL state for the requested endpoint.\n\n  This function clears STALL state for the requested endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\return Nothing."]
-    pub ClrStallEP: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
+    pub ClrStallEP: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32)>,
     #[doc = " \\fn ErrorCode_t SetTestMode(USBD_HANDLE_T hUsb, uint8_t mode)\n  Function to set high speed USB device controller in requested test mode.\n\n  USB-IF requires the high speed device to be put in various test modes\n  for electrical testing. This USB device stack calls this function whenever\n  it receives USB_REQUEST_CLEAR_FEATURE request for USB_FEATURE_TEST_MODE.\n  Users can put the device in test mode by directly calling this function.\n  Returns ERR_USBD_INVALID_REQ when device controller is full-speed only.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] mode  Test mode defined in USB 2.0 electrical testing specification.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK(0) - On success\n          \\retval ERR_USBD_INVALID_REQ(0x00040001) - Invalid test mode or\n                                             Device controller is full-speed only."]
     pub SetTestMode:
-        ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, mode: u8) -> ErrorCode_t>,
+        ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T, mode: u8) -> ErrorCode_t>,
     #[doc = " \\fn uint32_t ReadEP(USBD_HANDLE_T hUsb, uint32_t EPNum, uint8_t *pData)\n  Function to read data received on the requested endpoint.\n\n  This function is called by USB stack and the application layer to read the data\n  received on the requested endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\param[in,out] pData Pointer to the data buffer where data is to be copied.\n  \\return Returns the number of bytes copied to the buffer."]
-    pub ReadEP: ::std::option::Option<
+    pub ReadEP: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32, pData: *mut u8) -> u32,
     >,
     #[doc = " \\fn uint32_t ReadReqEP(USBD_HANDLE_T hUsb, uint32_t EPNum, uint8_t *pData, uint32_t len)\n  Function to queue read request on the specified endpoint.\n\n  This function is called by USB stack and the application layer to queue a read request\n  on the specified endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\param[in,out] pData Pointer to the data buffer where data is to be copied. This buffer\n                       address should be accessible by USB DMA master.\n  \\param[in] len  Length of the buffer passed.\n  \\return Returns the length of the requested buffer."]
-    pub ReadReqEP: ::std::option::Option<
+    pub ReadReqEP: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32, pData: *mut u8, len: u32) -> u32,
     >,
     #[doc = " \\fn uint32_t ReadSetupPkt(USBD_HANDLE_T hUsb, uint32_t EPNum, uint32_t *pData)\n  Function to read setup packet data received on the requested endpoint.\n\n  This function is called by USB stack and the application layer to read setup packet data\n  received on the requested endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP0_IN is represented by 0x80 number.\n  \\param[in,out] pData Pointer to the data buffer where data is to be copied.\n  \\return Returns the number of bytes copied to the buffer."]
-    pub ReadSetupPkt: ::std::option::Option<
+    pub ReadSetupPkt: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32, pData: *mut u32) -> u32,
     >,
     #[doc = " \\fn uint32_t WriteEP(USBD_HANDLE_T hUsb, uint32_t EPNum, uint8_t *pData, uint32_t cnt)\n  Function to write data to be sent on the requested endpoint.\n\n  This function is called by USB stack and the application layer to send data\n  on the requested endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number as per USB specification.\n                    ie. An EP1_IN is represented by 0x81 number.\n  \\param[in] pData Pointer to the data buffer from where data is to be copied.\n  \\param[in] cnt  Number of bytes to write.\n  \\return Returns the number of bytes written."]
-    pub WriteEP: ::std::option::Option<
+    pub WriteEP: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, EPNum: u32, pData: *mut u8, cnt: u32) -> u32,
     >,
     #[doc = " \\fn void WakeUp(USBD_HANDLE_T hUsb)\n  Function to generate resume signaling on bus for remote host wakeup.\n\n  This function is called by application layer to remotely wakeup host controller\n  when system is in suspend state. Application should indicate this remote wakeup\n  capability by setting USB_CONFIG_REMOTE_WAKEUP in bmAttributes of Configuration\n  Descriptor. Also this routine will generate resume signalling only if host\n  enables USB_FEATURE_REMOTE_WAKEUP by sending SET_FEATURE request before suspending\n  the bus.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\return Nothing."]
-    pub WakeUp: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub WakeUp: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = " \\fn void EnableEvent(USBD_HANDLE_T hUsb, uint32_t EPNum, uint32_t event_type, uint32_t enable)\n  Function to enable/disable selected USB event.\n\n  This function enables interrupts on selected endpoint.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] EPNum  Endpoint number corresponding to the event.\n                    ie. An EP1_IN is represented by 0x81 number. For device events\n                    set this param to 0x0.\n  \\param[in] event_type  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\param[in] enable  1 - enable event, 0 - disable event.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK(0) - On success\n          \\retval ERR_USBD_INVALID_REQ(0x00040001) - Invalid event type."]
-    pub EnableEvent: ::std::option::Option<
+    pub EnableEvent: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
             EPNum: u32,
@@ -2768,251 +1400,6 @@ pub struct USBD_HW_API {
             enable: u32,
         ) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_HW_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_HW_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_HW_API>(),
-        184usize,
-        concat!("Size of: ", stringify!(USBD_HW_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_HW_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_HW_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetMemSize) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(GetMemSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).Init) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(Init)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).Connect) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(Connect)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ISR) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ISR)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).Reset) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(Reset)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ForceFullSpeed) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ForceFullSpeed)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).WakeUpCfg) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(WakeUpCfg)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetAddress) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(SetAddress)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).Configure) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(Configure)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ConfigEP) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ConfigEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DirCtrlEP) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(DirCtrlEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).EnableEP) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(EnableEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DisableEP) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(DisableEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ResetEP) as usize - ptr as usize },
-        104usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ResetEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetStallEP) as usize - ptr as usize },
-        112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(SetStallEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ClrStallEP) as usize - ptr as usize },
-        120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ClrStallEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetTestMode) as usize - ptr as usize },
-        128usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(SetTestMode)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ReadEP) as usize - ptr as usize },
-        136usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ReadEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ReadReqEP) as usize - ptr as usize },
-        144usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ReadReqEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ReadSetupPkt) as usize - ptr as usize },
-        152usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(ReadSetupPkt)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).WriteEP) as usize - ptr as usize },
-        160usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(WriteEP)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).WakeUp) as usize - ptr as usize },
-        168usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(WakeUp)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).EnableEvent) as usize - ptr as usize },
-        176usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HW_API),
-            "::",
-            stringify!(EnableEvent)
-        )
-    );
 }
 #[doc = "  \\brief Hardware API functions structure.\n  \\ingroup USBD_HW\n\n  This module exposes functions which interact directly with USB device controller hardware.\n"]
 pub type USBD_HW_API_T = USBD_HW_API;
@@ -3106,91 +1493,6 @@ pub struct _MSC_CBW {
     pub bCBLength: u8,
     pub CB: [u8; 16usize],
 }
-#[test]
-fn bindgen_test_layout__MSC_CBW() {
-    const UNINIT: ::std::mem::MaybeUninit<_MSC_CBW> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_MSC_CBW>(),
-        31usize,
-        concat!("Size of: ", stringify!(_MSC_CBW))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_MSC_CBW>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_MSC_CBW))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dSignature) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(dSignature)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dTag) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(dTag)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dDataLength) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(dDataLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmFlags) as usize - ptr as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(bmFlags)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLUN) as usize - ptr as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(bLUN)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bCBLength) as usize - ptr as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(bCBLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CB) as usize - ptr as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CBW),
-            "::",
-            stringify!(CB)
-        )
-    );
-}
 pub type MSC_CBW = _MSC_CBW;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
@@ -3199,61 +1501,6 @@ pub struct _MSC_CSW {
     pub dTag: u32,
     pub dDataResidue: u32,
     pub bStatus: u8,
-}
-#[test]
-fn bindgen_test_layout__MSC_CSW() {
-    const UNINIT: ::std::mem::MaybeUninit<_MSC_CSW> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_MSC_CSW>(),
-        13usize,
-        concat!("Size of: ", stringify!(_MSC_CSW))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_MSC_CSW>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_MSC_CSW))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dSignature) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CSW),
-            "::",
-            stringify!(dSignature)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dTag) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CSW),
-            "::",
-            stringify!(dTag)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dDataResidue) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CSW),
-            "::",
-            stringify!(dDataResidue)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bStatus) as usize - ptr as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_MSC_CSW),
-            "::",
-            stringify!(bStatus)
-        )
-    );
 }
 pub type MSC_CSW = _MSC_CSW;
 #[doc = " \\brief Mass Storage class function driver initialization parameter data structure.\n  \\ingroup USBD_MSC\n\n  \\details  This data structure is used to pass initialization parameters to the\n  Mass Storage class function driver's init function.\n"]
@@ -3275,15 +1522,15 @@ pub struct USBD_MSC_INIT_PARAM {
     #[doc = " Pointer to the interface descriptor within the descriptor\n array (\\em high_speed_desc) passed to Init() through \\ref USB_CORE_DESCS_T\n structure. The stack assumes both HS and FS use same BULK endpoints."]
     pub intf_desc: *mut u8,
     #[doc = "  MSC Write callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a write command.\n\n  \\param[in] offset Destination start address.\n  \\param[in, out] src  Pointer to a pointer to the source of data. Pointer-to-pointer\n                       is used to implement zero-copy buffers. See \\ref USBD_ZeroCopy\n                       for more details on zero-copy concept.\n  \\param[in] length  Number of bytes to be written.\n  \\return Nothing.\n"]
-    pub MSC_Write: ::std::option::Option<
+    pub MSC_Write: ::core::option::Option<
         unsafe extern "C" fn(offset: u32, src: *mut *mut u8, length: u32, high_offset: u32),
     >,
     #[doc = "  MSC Read callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a read command.\n\n  \\param[in] offset Source start address.\n  \\param[in, out] dst  Pointer to a pointer to the source of data. The MSC function drivers\n         implemented in stack are written with zero-copy model. Meaning the stack doesn't make an\n          extra copy of buffer before writing/reading data from USB hardware FIFO. Hence the\n          parameter is pointer to a pointer containing address buffer (<em>uint8_t** dst</em>).\n          So that the user application can update the buffer pointer instead of copying data to\n          address pointed by the parameter. /note The updated buffer address should be accessible\n          by USB DMA master. If user doesn't want to use zero-copy model, then the user should copy\n          data to the address pointed by the passed buffer pointer parameter and shouldn't change\n          the address value. See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in] length  Number of bytes to be read.\n  \\return Nothing.\n"]
-    pub MSC_Read: ::std::option::Option<
+    pub MSC_Read: ::core::option::Option<
         unsafe extern "C" fn(offset: u32, dst: *mut *mut u8, length: u32, high_offset: u32),
     >,
     #[doc = "  MSC Verify callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a verify command. The callback function should compare the buffer\n  with the destination memory at the requested offset and\n\n  \\param[in] offset Destination start address.\n  \\param[in] buf  Buffer containing the data sent by the host.\n  \\param[in] length  Number of bytes to verify.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK If data in the buffer matches the data at destination\n          \\retval ERR_FAILED  At least one byte is different.\n"]
-    pub MSC_Verify: ::std::option::Option<
+    pub MSC_Verify: ::core::option::Option<
         unsafe extern "C" fn(
             offset: u32,
             buf: *mut u8,
@@ -3292,163 +1539,18 @@ pub struct USBD_MSC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional callback function to optimize MSC_Write buffer transfer.\n\n  This function is provided by the application software. This function gets called\n  when host sends SCSI_WRITE10/SCSI_WRITE12 command. The callback function should\n  update the \\em buff_adr pointer so that the stack transfers the data directly\n  to the target buffer. /note The updated buffer address should be accessible\n  by USB DMA master. If user doesn't want to use zero-copy model, then the user\n  should not update the buffer pointer. See \\ref USBD_ZeroCopy for more details\n  on zero-copy concept.\n\n  \\param[in] offset Destination start address.\n  \\param[in,out] buf  Buffer containing the data sent by the host.\n  \\param[in] length  Number of bytes to write.\n  \\return Nothing.\n"]
-    pub MSC_GetWriteBuf: ::std::option::Option<
+    pub MSC_GetWriteBuf: ::core::option::Option<
         unsafe extern "C" fn(offset: u32, buff_adr: *mut *mut u8, length: u32, high_offset: u32),
     >,
     #[doc = "  Optional user override-able function to replace the default MSC class handler.\n\n  The application software could override the default EP0 class handler with their\n  own by providing the handler function address as this data member of the parameter\n  structure. Application which like the default handler should set this data member\n  to zero before calling the USBD_MSC_API::Init().\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub MSC_Ep0_Hdlr: ::std::option::Option<
+    pub MSC_Ep0_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     pub MemorySize64: u64,
-}
-#[test]
-fn bindgen_test_layout_USBD_MSC_INIT_PARAM() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_MSC_INIT_PARAM> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_MSC_INIT_PARAM>(),
-        88usize,
-        concat!("Size of: ", stringify!(USBD_MSC_INIT_PARAM))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_MSC_INIT_PARAM>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_MSC_INIT_PARAM))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_base) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(mem_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_size) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(mem_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).InquiryStr) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(InquiryStr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).BlockCount) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(BlockCount)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).BlockSize) as usize - ptr as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(BlockSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MemorySize) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MemorySize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).intf_desc) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(intf_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MSC_Write) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MSC_Write)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MSC_Read) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MSC_Read)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MSC_Verify) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MSC_Verify)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MSC_GetWriteBuf) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MSC_GetWriteBuf)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MSC_Ep0_Hdlr) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MSC_Ep0_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).MemorySize64) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_INIT_PARAM),
-            "::",
-            stringify!(MemorySize64)
-        )
-    );
 }
 #[doc = " \\brief Mass Storage class function driver initialization parameter data structure.\n  \\ingroup USBD_MSC\n\n  \\details  This data structure is used to pass initialization parameters to the\n  Mass Storage class function driver's init function.\n"]
 pub type USBD_MSC_INIT_PARAM_T = USBD_MSC_INIT_PARAM;
@@ -3458,46 +1560,11 @@ pub type USBD_MSC_INIT_PARAM_T = USBD_MSC_INIT_PARAM;
 pub struct USBD_MSC_API {
     #[doc = " \\fn uint32_t GetMemSize(USBD_MSC_INIT_PARAM_T* param)\n  Function to determine the memory required by the MSC function driver module.\n\n  This function is called by application layer before calling pUsbApi->msc->Init(), to allocate memory used\n  by MSC function driver module. The application should allocate the memory which is accessible by USB\n  controller/DMA controller.\n  \\note Some memory areas are not accessible by all bus masters.\n\n  \\param[in] param Structure containing MSC function driver module initialization parameters.\n  \\return Returns the required memory size in bytes."]
     pub GetMemSize:
-        ::std::option::Option<unsafe extern "C" fn(param: *mut USBD_MSC_INIT_PARAM_T) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(param: *mut USBD_MSC_INIT_PARAM_T) -> u32>,
     #[doc = " \\fn ErrorCode_t init(USBD_HANDLE_T hUsb, USBD_MSC_INIT_PARAM_T* param)\n  Function to initialize MSC function driver module.\n\n  This function is called by application layer to initialize MSC function driver module.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in, out] param Structure containing MSC function driver module initialization parameters.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_BAD_MEM_BUF  Memory buffer passed is not 4-byte\n              aligned or smaller than required.\n          \\retval ERR_API_INVALID_PARAM2 Either MSC_Write() or MSC_Read() or\n              MSC_Verify() callbacks are not defined.\n          \\retval ERR_USBD_BAD_INTF_DESC  Wrong interface descriptor is passed.\n          \\retval ERR_USBD_BAD_EP_DESC  Wrong endpoint descriptor is passed."]
-    pub init: ::std::option::Option<
+    pub init: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, param: *mut USBD_MSC_INIT_PARAM_T) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_MSC_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_MSC_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_MSC_API>(),
-        16usize,
-        concat!("Size of: ", stringify!(USBD_MSC_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_MSC_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_MSC_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetMemSize) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_API),
-            "::",
-            stringify!(GetMemSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).init) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_MSC_API),
-            "::",
-            stringify!(init)
-        )
-    );
 }
 #[doc = " \\brief MSC class API functions structure.\n  \\ingroup USBD_MSC\n\n  This module exposes functions which interact directly with USB device controller hardware.\n"]
 pub type USBD_MSC_API_T = USBD_MSC_API;
@@ -3512,7 +1579,7 @@ pub const dfu_state_DFU_STATE_dfuMANIFEST: dfu_state = 7;
 pub const dfu_state_DFU_STATE_dfuMANIFEST_WAIT_RST: dfu_state = 8;
 pub const dfu_state_DFU_STATE_dfuUPLOAD_IDLE: dfu_state = 9;
 pub const dfu_state_DFU_STATE_dfuERROR: dfu_state = 10;
-pub type dfu_state = ::std::os::raw::c_uint;
+pub type dfu_state = ::core::ffi::c_uint;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
 pub struct _USB_DFU_FUNC_DESCRIPTOR {
@@ -3523,82 +1590,6 @@ pub struct _USB_DFU_FUNC_DESCRIPTOR {
     pub wTransferSize: u16,
     pub bcdDFUVersion: u16,
 }
-#[test]
-fn bindgen_test_layout__USB_DFU_FUNC_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_USB_DFU_FUNC_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_USB_DFU_FUNC_DESCRIPTOR>(),
-        9usize,
-        concat!("Size of: ", stringify!(_USB_DFU_FUNC_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_USB_DFU_FUNC_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_USB_DFU_FUNC_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmAttributes) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(bmAttributes)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wDetachTimeOut) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(wDetachTimeOut)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wTransferSize) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(wTransferSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdDFUVersion) as usize - ptr as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_USB_DFU_FUNC_DESCRIPTOR),
-            "::",
-            stringify!(bcdDFUVersion)
-        )
-    );
-}
 pub type USB_DFU_FUNC_DESCRIPTOR = _USB_DFU_FUNC_DESCRIPTOR;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
@@ -3607,61 +1598,6 @@ pub struct _DFU_STATUS {
     pub bwPollTimeout: [u8; 3usize],
     pub bState: u8,
     pub iString: u8,
-}
-#[test]
-fn bindgen_test_layout__DFU_STATUS() {
-    const UNINIT: ::std::mem::MaybeUninit<_DFU_STATUS> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_DFU_STATUS>(),
-        6usize,
-        concat!("Size of: ", stringify!(_DFU_STATUS))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_DFU_STATUS>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_DFU_STATUS))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bStatus) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_DFU_STATUS),
-            "::",
-            stringify!(bStatus)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bwPollTimeout) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_DFU_STATUS),
-            "::",
-            stringify!(bwPollTimeout)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bState) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_DFU_STATUS),
-            "::",
-            stringify!(bState)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).iString) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_DFU_STATUS),
-            "::",
-            stringify!(iString)
-        )
-    );
 }
 pub type DFU_STATUS_T = _DFU_STATUS;
 #[doc = " \\brief USB descriptors data structure.\n  \\ingroup USBD_DFU\n\n  \\details  This module exposes functions which interact directly with USB device stack's core layer.\n  The application layer uses this component when it has to implement custom class function driver or\n  standard class function driver which is not part of the current USB device stack.\n  The functions exposed by this interface are to register class specific EP0 handlers and corresponding\n  utility functions to manipulate EP0 state machine of the stack. This interface also exposes\n  function to register custom endpoint interrupt handler.\n"]
@@ -3678,7 +1614,7 @@ pub struct USBD_DFU_INIT_PARAM {
     #[doc = " Pointer to the DFU interface descriptor within the descriptor\n array (\\em high_speed_desc) passed to Init() through \\ref USB_CORE_DESCS_T\n structure."]
     pub intf_desc: *mut u8,
     #[doc = "  DFU Write callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a write command. For application using zero-copy buffer scheme\n  this function is called for the first time with \\em length parameter set to 0.\n  The application code should update the buffer pointer.\n\n  \\param[in] block_num Destination start address.\n  \\param[in, out] src  Pointer to a pointer to the source of data. Pointer-to-pointer\n                     is used to implement zero-copy buffers. See \\ref USBD_ZeroCopy\n                     for more details on zero-copy concept.\n  \\param[out] bwPollTimeout  Pointer to a 3 byte buffer which the callback implementer\n                     should fill with the amount of minimum time, in milliseconds,\n                     that the host should wait before sending a subsequent\n                     DFU_GETSTATUS request.\n  \\param[in] length  Number of bytes to be written.\n  \\return Returns DFU_STATUS_ values defined in mw_usbd_dfu.h.\n"]
-    pub DFU_Write: ::std::option::Option<
+    pub DFU_Write: ::core::option::Option<
         unsafe extern "C" fn(
             block_num: u32,
             src: *mut *mut u8,
@@ -3687,136 +1623,21 @@ pub struct USBD_DFU_INIT_PARAM {
         ) -> u8,
     >,
     #[doc = "  DFU Read callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a read command.\n\n  \\param[in] block_num Destination start address.\n  \\param[in, out] dst  Pointer to a pointer to the source of data. Pointer-to-pointer\n                       is used to implement zero-copy buffers. See \\ref USBD_ZeroCopy\n                       for more details on zero-copy concept.\n  \\param[in] length  Amount of data copied to destination buffer.\n  \\return Returns\n                 - DFU_STATUS_ values defined in mw_usbd_dfu.h to return error conditions.\n                 - 0 if there is no more data to be read. Stack will send EOF frame and set\n                     DFU state-machine to dfuIdle state.\n                 - length of the data copied, should be greater than or equal to 16. If the data copied\n                   is less than DFU \\em wTransferSize the stack will send EOF frame and\n                   goes to dfuIdle state.\n"]
-    pub DFU_Read: ::std::option::Option<
+    pub DFU_Read: ::core::option::Option<
         unsafe extern "C" fn(block_num: u32, dst: *mut *mut u8, length: u32) -> u32,
     >,
     #[doc = "  DFU done callback function.\n\n  This function is provided by the application software. This function gets called\n  after firmware download completes.\n\n  \\return Nothing.\n"]
-    pub DFU_Done: ::std::option::Option<unsafe extern "C" fn()>,
+    pub DFU_Done: ::core::option::Option<unsafe extern "C" fn()>,
     #[doc = "  DFU detach callback function.\n\n  This function is provided by the application software. This function gets called\n  after USB_REQ_DFU_DETACH is received. Applications which set USB_DFU_WILL_DETACH\n  bit in DFU descriptor should define this function. As part of this function\n  application can call Connect() routine to disconnect and then connect back with\n  host. For application which rely on WinUSB based host application should use this\n  feature since USB reset can be invoked only by kernel drivers on Windows host.\n  By implementing this feature host doen't have to issue reset instead the device\n  has to do it automatically by disconnect and connect procedure.\n\n  \\param[in] hUsb Handle DFU control structure.\n  \\return Nothing.\n"]
-    pub DFU_Detach: ::std::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
+    pub DFU_Detach: ::core::option::Option<unsafe extern "C" fn(hUsb: USBD_HANDLE_T)>,
     #[doc = "  Optional user override-able function to replace the default DFU class handler.\n\n  The application software could override the default EP0 class handler with their\n  own by providing the handler function address as this data member of the parameter\n  structure. Application which like the default handler should set this data member\n  to zero before calling the USBD_DFU_API::Init().\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub DFU_Ep0_Hdlr: ::std::option::Option<
+    pub DFU_Ep0_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_DFU_INIT_PARAM() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_DFU_INIT_PARAM> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_DFU_INIT_PARAM>(),
-        64usize,
-        concat!("Size of: ", stringify!(USBD_DFU_INIT_PARAM))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_DFU_INIT_PARAM>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_DFU_INIT_PARAM))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_base) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(mem_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_size) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(mem_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wTransferSize) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(wTransferSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).pad) as usize - ptr as usize },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(pad)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).intf_desc) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(intf_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DFU_Write) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(DFU_Write)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DFU_Read) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(DFU_Read)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DFU_Done) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(DFU_Done)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DFU_Detach) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(DFU_Detach)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DFU_Ep0_Hdlr) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_INIT_PARAM),
-            "::",
-            stringify!(DFU_Ep0_Hdlr)
-        )
-    );
 }
 #[doc = " \\brief USB descriptors data structure.\n  \\ingroup USBD_DFU\n\n  \\details  This module exposes functions which interact directly with USB device stack's core layer.\n  The application layer uses this component when it has to implement custom class function driver or\n  standard class function driver which is not part of the current USB device stack.\n  The functions exposed by this interface are to register class specific EP0 handlers and corresponding\n  utility functions to manipulate EP0 state machine of the stack. This interface also exposes\n  function to register custom endpoint interrupt handler.\n"]
 pub type USBD_DFU_INIT_PARAM_T = USBD_DFU_INIT_PARAM;
@@ -3826,50 +1647,15 @@ pub type USBD_DFU_INIT_PARAM_T = USBD_DFU_INIT_PARAM;
 pub struct USBD_DFU_API {
     #[doc = " \\fn uint32_t GetMemSize(USBD_DFU_INIT_PARAM_T* param)\n  Function to determine the memory required by the DFU function driver module.\n\n  This function is called by application layer before calling pUsbApi->dfu->Init(), to allocate memory used\n  by DFU function driver module. The application should allocate the memory which is accessible by USB\n  controller/DMA controller.\n  \\note Some memory areas are not accessible by all bus masters.\n\n  \\param[in] param Structure containing DFU function driver module initialization parameters.\n  \\return Returns the required memory size in bytes."]
     pub GetMemSize:
-        ::std::option::Option<unsafe extern "C" fn(param: *mut USBD_DFU_INIT_PARAM_T) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(param: *mut USBD_DFU_INIT_PARAM_T) -> u32>,
     #[doc = " \\fn ErrorCode_t init(USBD_HANDLE_T hUsb, USBD_DFU_INIT_PARAM_T* param)\n  Function to initialize DFU function driver module.\n\n  This function is called by application layer to initialize DFU function driver module.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in, out] param Structure containing DFU function driver module initialization parameters.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_BAD_MEM_BUF  Memory buffer passed is not 4-byte aligned or smaller than required.\n          \\retval ERR_API_INVALID_PARAM2 Either DFU_Write() or DFU_Done() or DFU_Read() call-backs are not defined.\n          \\retval ERR_USBD_BAD_DESC\n            - USB_DFU_DESCRIPTOR_TYPE is not defined immediately after\n              interface descriptor.\n            - wTransferSize in descriptor doesn't match the value passed\n              in param->wTransferSize.\n            - DFU_Detach() is not defined while USB_DFU_WILL_DETACH is set\n              in DFU descriptor.\n          \\retval ERR_USBD_BAD_INTF_DESC  Wrong interface descriptor is passed."]
-    pub init: ::std::option::Option<
+    pub init: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
             param: *mut USBD_DFU_INIT_PARAM_T,
             init_state: u32,
         ) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_DFU_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_DFU_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_DFU_API>(),
-        16usize,
-        concat!("Size of: ", stringify!(USBD_DFU_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_DFU_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_DFU_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetMemSize) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_API),
-            "::",
-            stringify!(GetMemSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).init) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_DFU_API),
-            "::",
-            stringify!(init)
-        )
-    );
 }
 #[doc = " \\brief DFU class API functions structure.\n  \\ingroup USBD_DFU\n\n  This module exposes functions which interact directly with USB device controller hardware.\n"]
 pub type USBD_DFU_API_T = USBD_DFU_API;
@@ -3898,123 +1684,6 @@ pub struct _HID_DESCRIPTOR__HID_DESCRIPTOR_LIST {
     #[doc = "< Length of the associated HID report descriptor, in bytes."]
     pub wDescriptorLength: u16,
 }
-#[test]
-fn bindgen_test_layout__HID_DESCRIPTOR__HID_DESCRIPTOR_LIST() {
-    const UNINIT: ::std::mem::MaybeUninit<_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST>(),
-        3usize,
-        concat!(
-            "Size of: ",
-            stringify!(_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST>(),
-        1usize,
-        concat!(
-            "Alignment of ",
-            stringify!(_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).wDescriptorLength) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR__HID_DESCRIPTOR_LIST),
-            "::",
-            stringify!(wDescriptorLength)
-        )
-    );
-}
-#[test]
-fn bindgen_test_layout__HID_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_HID_DESCRIPTOR> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_HID_DESCRIPTOR>(),
-        9usize,
-        concat!("Size of: ", stringify!(_HID_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_HID_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_HID_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(bLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdHID) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(bcdHID)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bCountryCode) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(bCountryCode)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bNumDescriptors) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(bNumDescriptors)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).DescriptorList) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_DESCRIPTOR),
-            "::",
-            stringify!(DescriptorList)
-        )
-    );
-}
 #[doc = " \\brief HID class-specific HID Descriptor.\n\n  Type define for the HID class-specific HID descriptor, to describe the HID device's specifications. Refer to the HID\n  specification for details on the structure elements.\n"]
 pub type HID_DESCRIPTOR = _HID_DESCRIPTOR;
 #[doc = " \\brief HID report descriptor data structure.\n  \\ingroup USBD_HID\n\n  \\details  This structure is used as part of HID function driver initialization\n  parameter structure \\ref USBD_HID_INIT_PARAM. This structure contains\n  details of a report type supported by the application. An application\n  can support multiple report types as a single HID device. The application\n  should define this report type data structure per report it supports and\n  the array of report types to USBD_HID_API::init() through \\ref USBD_HID_INIT_PARAM\n  structure.\n\n  \\note All descriptor pointers assigned in this structure should be on 4 byte\n  aligned address boundary.\n"]
@@ -4029,61 +1698,6 @@ pub struct _HID_REPORT_T {
     pub __pad: u8,
     #[doc = "< Report descriptor."]
     pub desc: *mut u8,
-}
-#[test]
-fn bindgen_test_layout__HID_REPORT_T() {
-    const UNINIT: ::std::mem::MaybeUninit<_HID_REPORT_T> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_HID_REPORT_T>(),
-        16usize,
-        concat!("Size of: ", stringify!(_HID_REPORT_T))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_HID_REPORT_T>(),
-        8usize,
-        concat!("Alignment of ", stringify!(_HID_REPORT_T))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).len) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_REPORT_T),
-            "::",
-            stringify!(len)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).idle_time) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_REPORT_T),
-            "::",
-            stringify!(idle_time)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).__pad) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_REPORT_T),
-            "::",
-            stringify!(__pad)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).desc) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_HID_REPORT_T),
-            "::",
-            stringify!(desc)
-        )
-    );
 }
 #[doc = " \\brief HID report descriptor data structure.\n  \\ingroup USBD_HID\n\n  \\details  This structure is used as part of HID function driver initialization\n  parameter structure \\ref USBD_HID_INIT_PARAM. This structure contains\n  details of a report type supported by the application. An application\n  can support multiple report types as a single HID device. The application\n  should define this report type data structure per report it supports and\n  the array of report types to USBD_HID_API::init() through \\ref USBD_HID_INIT_PARAM\n  structure.\n\n  \\note All descriptor pointers assigned in this structure should be on 4 byte\n  aligned address boundary.\n"]
 pub type USB_HID_REPORT_T = _HID_REPORT_T;
@@ -4103,7 +1717,7 @@ pub struct USBD_HID_INIT_PARAM {
     #[doc = "< Pointer to an array of HID report descriptor\ndata structure (\\ref USB_HID_REPORT_T). The number\nof elements in the array should be same a \\em max_reports\nvalue. The stack uses this array to respond to\nrequests received for various HID report descriptor\ninformation. \\note This array should be of global scope."]
     pub report_data: *mut USB_HID_REPORT_T,
     #[doc = "  HID get report callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a HID_REQUEST_GET_REPORT request. The setup packet data (\\em pSetup)\n  is passed to the callback so that application can extract the report ID, report\n  type and other information need to generate the report. \\note HID reports are sent\n  via interrupt IN endpoint also. This function is called only when report request\n  is received on control endpoint. Application should implement \\em HID_EpIn_Hdlr to\n  send reports to host via interrupt IN endpoint.\n\n\n  \\param[in] hHid Handle to HID function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in, out] pBuffer  Pointer to a pointer of data buffer containing report data.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n                       See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in] length  Amount of data copied to destination buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_GetReport: ::std::option::Option<
+    pub HID_GetReport: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4112,7 +1726,7 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  HID set report callback function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a HID_REQUEST_SET_REPORT request. The setup packet data (\\em pSetup)\n  is passed to the callback so that application can extract the report ID, report\n  type and other information need to modify the report. An application might choose\n  to ignore input Set_Report requests as meaningless. Alternatively these reports\n  could be used to reset the origin of a control (that is, current position should\n  report zero).\n\n  \\param[in] hHid Handle to HID function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in, out] pBuffer  Pointer to a pointer of data buffer containing report data.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n                       See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in] length  Amount of data copied to destination buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_SetReport: ::std::option::Option<
+    pub HID_SetReport: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4121,7 +1735,7 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional callback function to handle HID_GetPhysDesc request.\n\n  The application software could provide this callback HID_GetPhysDesc handler to\n  handle get physical descriptor requests sent by the host. When host requests\n  Physical Descriptor set 0, application should return a special descriptor\n  identifying the number of descriptor sets and their sizes. A Get_Descriptor\n  request with the Physical Index equal to 1 should return the first Physical\n  Descriptor set. A device could possibly have alternate uses for its items.\n  These can be enumerated by issuing subsequent Get_Descriptor requests while\n  incrementing the Descriptor Index. A device should return the last descriptor\n  set to requests with an index greater than the last number defined in the HID\n  descriptor.\n  \\note Applications which don't have physical descriptor should set this data member\n  to zero before calling the USBD_HID_API::Init().\n  \\n\n\n  \\param[in] hHid Handle to HID function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in] pBuf Pointer to a pointer of data buffer containing physical descriptor\n                   data. If the physical descriptor is in USB accessible memory area\n                   application could just update the pointer or else it should copy\n                   the descriptor to the address pointed by this pointer.\n  \\param[in] length  Amount of data copied to destination buffer or descriptor length.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_GetPhysDesc: ::std::option::Option<
+    pub HID_GetPhysDesc: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4130,7 +1744,7 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional callback function to handle HID_REQUEST_SET_IDLE request.\n\n  The application software could provide this callback to handle HID_REQUEST_SET_IDLE\n  requests sent by the host. This callback is provided to applications to adjust\n  timers associated with various reports, which are sent to host over interrupt\n  endpoint. The setup packet data (\\em pSetup) is passed to the callback so that\n  application can extract the report ID, report type and other information need\n  to modify the report's idle time.\n  \\note Applications which don't send reports on Interrupt endpoint or don't\n  have idle time between reports should set this data member to zero before\n  calling the USBD_HID_API::Init().\n  \\n\n\n  \\param[in] hHid Handle to HID function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in] idleTime  Idle time to be set for the specified report.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_SetIdle: ::std::option::Option<
+    pub HID_SetIdle: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4138,7 +1752,7 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional callback function to handle HID_REQUEST_SET_PROTOCOL request.\n\n  The application software could provide this callback to handle HID_REQUEST_SET_PROTOCOL\n  requests sent by the host. This callback is provided to applications to adjust\n  modes of their code between boot mode and report mode.\n  \\note Applications which don't support protocol modes should set this data member\n  to zero before calling the USBD_HID_API::Init().\n  \\n\n\n  \\param[in] hHid Handle to HID function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in] protocol  Protocol mode.\n                       0 = Boot Protocol\n                       1 = Report Protocol\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_SetProtocol: ::std::option::Option<
+    pub HID_SetProtocol: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4146,23 +1760,23 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional Interrupt IN endpoint event handler.\n\n  The application software could provide Interrupt IN endpoint event handler.\n  Application which send reports to host on interrupt endpoint should provide\n  an endpoint event handler through this data member. This data member is\n  ignored if the interface descriptor \\em intf_desc doesn't have any IN interrupt\n  endpoint descriptor associated.\n  \\n\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Handle to HID function driver.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should return \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_EpIn_Hdlr: ::std::option::Option<
+    pub HID_EpIn_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional Interrupt OUT endpoint event handler.\n\n  The application software could provide Interrupt OUT endpoint event handler.\n  Application which receives reports from host on interrupt endpoint should provide\n  an endpoint event handler through this data member. This data member is\n  ignored if the interface descriptor \\em intf_desc doesn't have any OUT interrupt\n  endpoint descriptor associated.\n  \\n\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Handle to HID function driver.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should return \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_EpOut_Hdlr: ::std::option::Option<
+    pub HID_EpOut_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional user override-able function to replace the default HID_GetReportDesc handler.\n\n  The application software could override the default HID_GetReportDesc handler with their\n  own by providing the handler function address as this data member of the parameter\n  structure. Application which like the default handler should set this data member\n  to zero before calling the USBD_HID_API::Init() and also provide report data array\n  \\em report_data field.\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_GetReportDesc: ::std::option::Option<
+    pub HID_GetReportDesc: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4171,178 +1785,13 @@ pub struct USBD_HID_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional user override-able function to replace the default HID class handler.\n\n  The application software could override the default EP0 class handler with their\n  own by providing the handler function address as this data member of the parameter\n  structure. Application which like the default handler should set this data member\n  to zero before calling the USBD_HID_API::Init().\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub HID_Ep0_Hdlr: ::std::option::Option<
+    pub HID_Ep0_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_HID_INIT_PARAM() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_HID_INIT_PARAM> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_HID_INIT_PARAM>(),
-        104usize,
-        concat!("Size of: ", stringify!(USBD_HID_INIT_PARAM))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_HID_INIT_PARAM>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_HID_INIT_PARAM))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_base) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(mem_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_size) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(mem_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).max_reports) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(max_reports)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).pad) as usize - ptr as usize },
-        9usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(pad)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).intf_desc) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(intf_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).report_data) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(report_data)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_GetReport) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_GetReport)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_SetReport) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_SetReport)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_GetPhysDesc) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_GetPhysDesc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_SetIdle) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_SetIdle)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_SetProtocol) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_SetProtocol)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_EpIn_Hdlr) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_EpIn_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_EpOut_Hdlr) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_EpOut_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_GetReportDesc) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_GetReportDesc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).HID_Ep0_Hdlr) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_INIT_PARAM),
-            "::",
-            stringify!(HID_Ep0_Hdlr)
-        )
-    );
 }
 #[doc = " \\brief USB descriptors data structure.\n  \\ingroup USBD_HID\n\n  \\details  This module exposes functions which interact directly with USB device stack's core layer.\n  The application layer uses this component when it has to implement custom class function driver or\n  standard class function driver which is not part of the current USB device stack.\n  The functions exposed by this interface are to register class specific EP0 handlers and corresponding\n  utility functions to manipulate EP0 state machine of the stack. This interface also exposes\n  function to register custom endpoint interrupt handler.\n"]
 pub type USBD_HID_INIT_PARAM_T = USBD_HID_INIT_PARAM;
@@ -4352,46 +1801,11 @@ pub type USBD_HID_INIT_PARAM_T = USBD_HID_INIT_PARAM;
 pub struct USBD_HID_API {
     #[doc = " \\fn uint32_t GetMemSize(USBD_HID_INIT_PARAM_T* param)\n  Function to determine the memory required by the HID function driver module.\n\n  This function is called by application layer before calling pUsbApi->hid->Init(), to allocate memory used\n  by HID function driver module. The application should allocate the memory which is accessible by USB\n  controller/DMA controller.\n  \\note Some memory areas are not accessible by all bus masters.\n\n  \\param[in] param Structure containing HID function driver module initialization parameters.\n  \\return Returns the required memory size in bytes."]
     pub GetMemSize:
-        ::std::option::Option<unsafe extern "C" fn(param: *mut USBD_HID_INIT_PARAM_T) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(param: *mut USBD_HID_INIT_PARAM_T) -> u32>,
     #[doc = " \\fn ErrorCode_t init(USBD_HANDLE_T hUsb, USBD_HID_INIT_PARAM_T* param)\n  Function to initialize HID function driver module.\n\n  This function is called by application layer to initialize HID function driver\n  module. On successful initialization the function returns a handle to HID\n  function driver module in passed param structure.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in, out] param Structure containing HID function driver module\n      initialization parameters.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_BAD_MEM_BUF  Memory buffer passed is not 4-byte\n              aligned or smaller than required.\n          \\retval ERR_API_INVALID_PARAM2 Either HID_GetReport() or HID_SetReport()\n              callback are not defined.\n          \\retval ERR_USBD_BAD_DESC  HID_HID_DESCRIPTOR_TYPE is not defined\n              immediately after interface descriptor.\n          \\retval ERR_USBD_BAD_INTF_DESC  Wrong interface descriptor is passed.\n          \\retval ERR_USBD_BAD_EP_DESC  Wrong endpoint descriptor is passed."]
-    pub init: ::std::option::Option<
+    pub init: ::core::option::Option<
         unsafe extern "C" fn(hUsb: USBD_HANDLE_T, param: *mut USBD_HID_INIT_PARAM_T) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_HID_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_HID_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_HID_API>(),
-        16usize,
-        concat!("Size of: ", stringify!(USBD_HID_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_HID_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_HID_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetMemSize) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_API),
-            "::",
-            stringify!(GetMemSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).init) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_HID_API),
-            "::",
-            stringify!(init)
-        )
-    );
 }
 #[doc = " \\brief HID class API functions structure.\n  \\ingroup USBD_HID\n\n  This structure contains pointers to all the function exposed by HID function driver module.\n"]
 pub type USBD_HID_API_T = USBD_HID_API;
@@ -4403,62 +1817,6 @@ pub struct _CDC_HEADER_DESCRIPTOR {
     pub bDescriptorSubtype: u8,
     pub bcdCDC: u16,
 }
-#[test]
-fn bindgen_test_layout__CDC_HEADER_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_HEADER_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_HEADER_DESCRIPTOR>(),
-        5usize,
-        concat!("Size of: ", stringify!(_CDC_HEADER_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_HEADER_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_CDC_HEADER_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_HEADER_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_HEADER_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorSubtype) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_HEADER_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorSubtype)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bcdCDC) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_HEADER_DESCRIPTOR),
-            "::",
-            stringify!(bcdCDC)
-        )
-    );
-}
 pub type CDC_HEADER_DESCRIPTOR = _CDC_HEADER_DESCRIPTOR;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
@@ -4469,72 +1827,6 @@ pub struct _CDC_CALL_MANAGEMENT_DESCRIPTOR {
     pub bmCapabilities: u8,
     pub bDataInterface: u8,
 }
-#[test]
-fn bindgen_test_layout__CDC_CALL_MANAGEMENT_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_CALL_MANAGEMENT_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_CALL_MANAGEMENT_DESCRIPTOR>(),
-        5usize,
-        concat!("Size of: ", stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_CALL_MANAGEMENT_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorSubtype) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorSubtype)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmCapabilities) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bmCapabilities)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDataInterface) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_CALL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bDataInterface)
-        )
-    );
-}
 pub type CDC_CALL_MANAGEMENT_DESCRIPTOR = _CDC_CALL_MANAGEMENT_DESCRIPTOR;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
@@ -4543,68 +1835,6 @@ pub struct _CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR {
     pub bDescriptorType: u8,
     pub bDescriptorSubtype: u8,
     pub bmCapabilities: u8,
-}
-#[test]
-fn bindgen_test_layout__CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR>(),
-        4usize,
-        concat!(
-            "Size of: ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR>(),
-        1usize,
-        concat!(
-            "Alignment of ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorSubtype) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorSubtype)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bmCapabilities) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR),
-            "::",
-            stringify!(bmCapabilities)
-        )
-    );
 }
 pub type CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR = _CDC_ABSTRACT_CONTROL_MANAGEMENT_DESCRIPTOR;
 #[repr(C, packed)]
@@ -4615,104 +1845,12 @@ pub struct _CDC_UNION_DESCRIPTOR {
     pub bDescriptorSubtype: u8,
     pub bMasterInterface: u8,
 }
-#[test]
-fn bindgen_test_layout__CDC_UNION_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_UNION_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_UNION_DESCRIPTOR>(),
-        4usize,
-        concat!("Size of: ", stringify!(_CDC_UNION_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_UNION_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_CDC_UNION_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bFunctionLength) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_DESCRIPTOR),
-            "::",
-            stringify!(bFunctionLength)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorType) as usize - ptr as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDescriptorSubtype) as usize - ptr as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_DESCRIPTOR),
-            "::",
-            stringify!(bDescriptorSubtype)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bMasterInterface) as usize - ptr as usize },
-        3usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_DESCRIPTOR),
-            "::",
-            stringify!(bMasterInterface)
-        )
-    );
-}
 pub type CDC_UNION_DESCRIPTOR = _CDC_UNION_DESCRIPTOR;
 #[repr(C, packed)]
 #[derive(Debug, Copy, Clone)]
 pub struct _CDC_UNION_1SLAVE_DESCRIPTOR {
     pub sUnion: CDC_UNION_DESCRIPTOR,
     pub bSlaveInterfaces: [u8; 1usize],
-}
-#[test]
-fn bindgen_test_layout__CDC_UNION_1SLAVE_DESCRIPTOR() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_UNION_1SLAVE_DESCRIPTOR> =
-        ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_UNION_1SLAVE_DESCRIPTOR>(),
-        5usize,
-        concat!("Size of: ", stringify!(_CDC_UNION_1SLAVE_DESCRIPTOR))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_UNION_1SLAVE_DESCRIPTOR>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_CDC_UNION_1SLAVE_DESCRIPTOR))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).sUnion) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_1SLAVE_DESCRIPTOR),
-            "::",
-            stringify!(sUnion)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bSlaveInterfaces) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_UNION_1SLAVE_DESCRIPTOR),
-            "::",
-            stringify!(bSlaveInterfaces)
-        )
-    );
 }
 pub type CDC_UNION_1SLAVE_DESCRIPTOR = _CDC_UNION_1SLAVE_DESCRIPTOR;
 #[repr(C, packed)]
@@ -4722,61 +1860,6 @@ pub struct _CDC_LINE_CODING {
     pub bCharFormat: u8,
     pub bParityType: u8,
     pub bDataBits: u8,
-}
-#[test]
-fn bindgen_test_layout__CDC_LINE_CODING() {
-    const UNINIT: ::std::mem::MaybeUninit<_CDC_LINE_CODING> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<_CDC_LINE_CODING>(),
-        7usize,
-        concat!("Size of: ", stringify!(_CDC_LINE_CODING))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<_CDC_LINE_CODING>(),
-        1usize,
-        concat!("Alignment of ", stringify!(_CDC_LINE_CODING))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dwDTERate) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_LINE_CODING),
-            "::",
-            stringify!(dwDTERate)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bCharFormat) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_LINE_CODING),
-            "::",
-            stringify!(bCharFormat)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bParityType) as usize - ptr as usize },
-        5usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_LINE_CODING),
-            "::",
-            stringify!(bParityType)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).bDataBits) as usize - ptr as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(_CDC_LINE_CODING),
-            "::",
-            stringify!(bDataBits)
-        )
-    );
 }
 pub type CDC_LINE_CODING = _CDC_LINE_CODING;
 #[doc = " USB Default Control Pipe Setup Packet"]
@@ -4794,7 +1877,7 @@ pub struct USBD_CDC_INIT_PARAM {
     #[doc = " Pointer to the data interface descriptor within the descriptor\n array (\\em high_speed_desc) passed to Init() through \\ref USB_CORE_DESCS_T\n structure. The stack assumes both HS and FS use same BULK endpoints."]
     pub dif_intf_desc: *mut u8,
     #[doc = "  Communication Interface Class specific get request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends CIC management element get requests.\n  \\note Applications implementing Abstract Control Model subclass can set this\n  param to NULL. As the default driver parses ACM requests and calls the\n  individual ACM call-back routines defined in this structure. For all other subclasses\n  this routine should be provided by the application.\n  \\n\n  The setup packet data (\\em pSetup) is passed to the call-back so that application\n  can extract the CIC request type and other associated data. By default the stack\n  will assign \\em pBuffer pointer to \\em EP0Buff allocated at init. The application\n  code can directly write data into this buffer as long as data is less than 64 byte.\n  If more data has to be sent then application code should update \\em pBuffer pointer\n  and length accordingly.\n\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in, out] pBuffer  Pointer to a pointer of data buffer containing request data.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n                       See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in, out] length  Amount of data to be sent back to host.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CIC_GetRequest: ::std::option::Option<
+    pub CIC_GetRequest: ::core::option::Option<
         unsafe extern "C" fn(
             hHid: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4803,7 +1886,7 @@ pub struct USBD_CDC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Communication Interface Class specific set request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a CIC management element requests.\n  \\note Applications implementing Abstract Control Model subclass can set this\n  param to NULL. As the default driver parses ACM requests and calls the\n  individual ACM call-back routines defined in this structure. For all other subclasses\n  this routine should be provided by the application.\n  \\n\n  The setup packet data (\\em pSetup) is passed to the call-back so that application can\n  extract the CIC request type and other associated data. If a set request has data associated,\n  then this call-back is called twice.\n  -# First when setup request is received, at this time application code could update\n  \\em pBuffer pointer to point to the intended destination. The length param is set to 0\n  so that application code knows this is first time. By default the stack will\n  assign \\em pBuffer pointer to \\em EP0Buff allocated at init. Note, if data length is\n  greater than 64 bytes and application code doesn't update \\em pBuffer pointer the\n  stack will send STALL condition to host.\n  -# Second when the data is received from the host. This time the length param is set\n  with number of data bytes received.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] pSetup Pointer to setup packet received from host.\n  \\param[in, out] pBuffer  Pointer to a pointer of data buffer containing request data.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n                       See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in] length  Amount of data copied to destination buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CIC_SetRequest: ::std::option::Option<
+    pub CIC_SetRequest: ::core::option::Option<
         unsafe extern "C" fn(
             hCdc: USBD_HANDLE_T,
             pSetup: *mut USB_SETUP_PACKET,
@@ -4812,27 +1895,27 @@ pub struct USBD_CDC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Communication Device Class specific BULK IN endpoint handler.\n\n  The application software should provide the BULK IN endpoint handler.\n  Applications should transfer data depending on the communication protocol type set in descriptors.\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CDC_BulkIN_Hdlr: ::std::option::Option<
+    pub CDC_BulkIN_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     #[doc = "  Communication Device Class specific BULK OUT endpoint handler.\n\n  The application software should provide the BULK OUT endpoint handler.\n  Applications should transfer data depending on the communication protocol type set in descriptors.\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CDC_BulkOUT_Hdlr: ::std::option::Option<
+    pub CDC_BulkOUT_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific SEND_ENCAPSULATED_COMMAND request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a SEND_ENCAPSULATED_COMMAND set request.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] buffer Pointer to the command buffer.\n  \\param[in] len  Length of the command buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub SendEncpsCmd: ::std::option::Option<
+    pub SendEncpsCmd: ::core::option::Option<
         unsafe extern "C" fn(hCDC: USBD_HANDLE_T, buffer: *mut u8, len: u16) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific GET_ENCAPSULATED_RESPONSE request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a GET_ENCAPSULATED_RESPONSE request.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in, out] buffer Pointer to a pointer of data buffer containing response data.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n                       See \\ref USBD_ZeroCopy for more details on zero-copy concept.\n  \\param[in, out] len  Amount of data to be sent back to host.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub GetEncpsResp: ::std::option::Option<
+    pub GetEncpsResp: ::core::option::Option<
         unsafe extern "C" fn(
             hCDC: USBD_HANDLE_T,
             buffer: *mut *mut u8,
@@ -4840,7 +1923,7 @@ pub struct USBD_CDC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific SET_COMM_FEATURE request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a SET_COMM_FEATURE set request.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] feature Communication feature type. See usbcdc11.pdf, section 6.2.4, Table 47.\n  \\param[in] buffer Pointer to the settings buffer for the specified communication feature.\n  \\param[in] len  Length of the request buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub SetCommFeature: ::std::option::Option<
+    pub SetCommFeature: ::core::option::Option<
         unsafe extern "C" fn(
             hCDC: USBD_HANDLE_T,
             feature: u16,
@@ -4849,7 +1932,7 @@ pub struct USBD_CDC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific GET_COMM_FEATURE request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a GET_ENCAPSULATED_RESPONSE request.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] feature Communication feature type. See usbcdc11.pdf, section 6.2.4, Table 47.\n  \\param[in, out] buffer Pointer to a pointer of data buffer containing current settings\n                         for the communication feature.\n                       Pointer-to-pointer is used to implement zero-copy buffers.\n  \\param[in, out] len  Amount of data to be sent back to host.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub GetCommFeature: ::std::option::Option<
+    pub GetCommFeature: ::core::option::Option<
         unsafe extern "C" fn(
             hCDC: USBD_HANDLE_T,
             feature: u16,
@@ -4858,231 +1941,37 @@ pub struct USBD_CDC_INIT_PARAM {
         ) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific CLEAR_COMM_FEATURE request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a CLEAR_COMM_FEATURE request. In the call-back the application\n  should Clears the settings for a particular communication feature.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] feature Communication feature type. See usbcdc11.pdf, section 6.2.4, Table 47.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub ClrCommFeature: ::std::option::Option<
+    pub ClrCommFeature: ::core::option::Option<
         unsafe extern "C" fn(hCDC: USBD_HANDLE_T, feature: u16) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific SET_CONTROL_LINE_STATE request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a SET_CONTROL_LINE_STATE request. RS-232 signal used to tell the DCE\n  device the DTE device is now present\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] state The state value uses bitmap values defined in usbcdc11.pdf,\n        section 6.2.14, Table 51.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub SetCtrlLineState:
-        ::std::option::Option<unsafe extern "C" fn(hCDC: USBD_HANDLE_T, state: u16) -> ErrorCode_t>,
+    pub SetCtrlLineState: ::core::option::Option<
+        unsafe extern "C" fn(hCDC: USBD_HANDLE_T, state: u16) -> ErrorCode_t,
+    >,
     #[doc = "  Abstract control model(ACM) subclass specific SEND_BREAK request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a SEND_BREAK request.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] mstime Duration of Break signal in milliseconds. If mstime is FFFFh, then\n        the application should send break until another SendBreak request is received\n        with the wValue of 0000h.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub SendBreak: ::std::option::Option<
+    pub SendBreak: ::core::option::Option<
         unsafe extern "C" fn(hCDC: USBD_HANDLE_T, mstime: u16) -> ErrorCode_t,
     >,
     #[doc = "  Abstract control model(ACM) subclass specific SET_LINE_CODING request call-back function.\n\n  This function is provided by the application software. This function gets called\n  when host sends a SET_LINE_CODING request. The application should configure the device\n  per DTE rate, stop-bits, parity, and number-of-character bits settings provided in\n  command buffer. See usbcdc11.pdf, section 6.2.13, table 50 for detail of the command buffer.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] line_coding Pointer to the CDC_LINE_CODING command buffer.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub SetLineCode: ::std::option::Option<
+    pub SetLineCode: ::core::option::Option<
         unsafe extern "C" fn(hCDC: USBD_HANDLE_T, line_coding: *mut CDC_LINE_CODING) -> ErrorCode_t,
     >,
     #[doc = "  Optional Communication Device Class specific INTERRUPT IN endpoint handler.\n\n  The application software should provide the INT IN endpoint handler.\n  Applications should transfer data depending on the communication protocol type set in descriptors.\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CDC_InterruptEP_Hdlr: ::std::option::Option<
+    pub CDC_InterruptEP_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
     #[doc = "  Optional user override-able function to replace the default CDC class handler.\n\n  The application software could override the default EP0 class handler with their\n  own by providing the handler function address as this data member of the parameter\n  structure. Application which like the default handler should set this data member\n  to zero before calling the USBD_CDC_API::Init().\n  \\n\n  \\note\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in] data Pointer to the data which will be passed when callback function is called by the stack.\n  \\param[in] event  Type of endpoint event. See \\ref USBD_EVENT_T for more details.\n  \\return The call back should returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success.\n          \\retval ERR_USBD_UNHANDLED  Event is not handled hence pass the event to next in line.\n          \\retval ERR_USBD_xxx  For other error conditions.\n"]
-    pub CDC_Ep0_Hdlr: ::std::option::Option<
+    pub CDC_Ep0_Hdlr: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
-            data: *mut ::std::os::raw::c_void,
+            data: *mut ::core::ffi::c_void,
             event: u32,
         ) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_CDC_INIT_PARAM() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_CDC_INIT_PARAM> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_CDC_INIT_PARAM>(),
-        136usize,
-        concat!("Size of: ", stringify!(USBD_CDC_INIT_PARAM))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_CDC_INIT_PARAM>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_CDC_INIT_PARAM))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_base) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(mem_base)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).mem_size) as usize - ptr as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(mem_size)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).cif_intf_desc) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(cif_intf_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dif_intf_desc) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(dif_intf_desc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CIC_GetRequest) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CIC_GetRequest)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CIC_SetRequest) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CIC_SetRequest)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CDC_BulkIN_Hdlr) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CDC_BulkIN_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CDC_BulkOUT_Hdlr) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CDC_BulkOUT_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SendEncpsCmd) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(SendEncpsCmd)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetEncpsResp) as usize - ptr as usize },
-        64usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(GetEncpsResp)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetCommFeature) as usize - ptr as usize },
-        72usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(SetCommFeature)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetCommFeature) as usize - ptr as usize },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(GetCommFeature)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).ClrCommFeature) as usize - ptr as usize },
-        88usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(ClrCommFeature)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetCtrlLineState) as usize - ptr as usize },
-        96usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(SetCtrlLineState)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SendBreak) as usize - ptr as usize },
-        104usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(SendBreak)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SetLineCode) as usize - ptr as usize },
-        112usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(SetLineCode)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CDC_InterruptEP_Hdlr) as usize - ptr as usize },
-        120usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CDC_InterruptEP_Hdlr)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).CDC_Ep0_Hdlr) as usize - ptr as usize },
-        128usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_INIT_PARAM),
-            "::",
-            stringify!(CDC_Ep0_Hdlr)
-        )
-    );
 }
 #[doc = " \\brief Communication Device Class function driver initialization parameter data structure.\n  \\ingroup USBD_CDC\n\n  \\details  This data structure is used to pass initialization parameters to the\n  Communication Device Class function driver's init function.\n"]
 pub type USBD_CDC_INIT_PARAM_T = USBD_CDC_INIT_PARAM;
@@ -5092,9 +1981,9 @@ pub type USBD_CDC_INIT_PARAM_T = USBD_CDC_INIT_PARAM;
 pub struct USBD_CDC_API {
     #[doc = " \\fn uint32_t GetMemSize(USBD_CDC_INIT_PARAM_T* param)\n  Function to determine the memory required by the CDC function driver module.\n\n  This function is called by application layer before calling pUsbApi->CDC->Init(), to allocate memory used\n  by CDC function driver module. The application should allocate the memory which is accessible by USB\n  controller/DMA controller.\n  \\note Some memory areas are not accessible by all bus masters.\n\n  \\param[in] param Structure containing CDC function driver module initialization parameters.\n  \\return Returns the required memory size in bytes."]
     pub GetMemSize:
-        ::std::option::Option<unsafe extern "C" fn(param: *mut USBD_CDC_INIT_PARAM_T) -> u32>,
+        ::core::option::Option<unsafe extern "C" fn(param: *mut USBD_CDC_INIT_PARAM_T) -> u32>,
     #[doc = " \\fn ErrorCode_t init(USBD_HANDLE_T hUsb, USBD_CDC_INIT_PARAM_T* param)\n  Function to initialize CDC function driver module.\n\n  This function is called by application layer to initialize CDC function driver module.\n\n  \\param[in] hUsb Handle to the USB device stack.\n  \\param[in, out] param Structure containing CDC function driver module initialization parameters.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_USBD_BAD_MEM_BUF  Memory buffer passed is not 4-byte\n              aligned or smaller than required.\n          \\retval ERR_API_INVALID_PARAM2 Either CDC_Write() or CDC_Read() or\n              CDC_Verify() callbacks are not defined.\n          \\retval ERR_USBD_BAD_INTF_DESC  Wrong interface descriptor is passed.\n          \\retval ERR_USBD_BAD_EP_DESC  Wrong endpoint descriptor is passed."]
-    pub init: ::std::option::Option<
+    pub init: ::core::option::Option<
         unsafe extern "C" fn(
             hUsb: USBD_HANDLE_T,
             param: *mut USBD_CDC_INIT_PARAM_T,
@@ -5102,54 +1991,9 @@ pub struct USBD_CDC_API {
         ) -> ErrorCode_t,
     >,
     #[doc = " \\fn ErrorCode_t SendNotification(USBD_HANDLE_T hCdc, uint8_t bNotification, uint16_t data)\n  Function to send CDC class notifications to host.\n\n  This function is called by application layer to send CDC class notifications to host.\n  See usbcdc11.pdf, section 6.3, Table 67 for various notification types the CDC device can send.\n  \\note The current version of the driver only supports following notifications allowed by ACM subclass:\n  CDC_NOTIFICATION_NETWORK_CONNECTION, CDC_RESPONSE_AVAILABLE, CDC_NOTIFICATION_SERIAL_STATE.\n  \\n\n  For all other notifications application should construct the notification buffer appropriately\n  and call hw->USB_WriteEP() for interrupt endpoint associated with the interface.\n\n  \\param[in] hCdc Handle to CDC function driver.\n  \\param[in] bNotification Notification type allowed by ACM subclass. Should be CDC_NOTIFICATION_NETWORK_CONNECTION,\n        CDC_RESPONSE_AVAILABLE or CDC_NOTIFICATION_SERIAL_STATE. For all other types ERR_API_INVALID_PARAM2\n        is returned. See usbcdc11.pdf, section 3.6.2.1, table 5.\n  \\param[in] data Data associated with notification.\n        \\n For CDC_NOTIFICATION_NETWORK_CONNECTION a non-zero data value is interpreted as connected state.\n        \\n For CDC_RESPONSE_AVAILABLE this parameter is ignored.\n        \\n For CDC_NOTIFICATION_SERIAL_STATE the data should use bitmap values defined in usbcdc11.pdf,\n        section 6.3.5, Table 69.\n  \\return Returns \\ref ErrorCode_t type to indicate success or error condition.\n          \\retval LPC_OK On success\n          \\retval ERR_API_INVALID_PARAM2  If unsupported notification type is passed.\n"]
-    pub SendNotification: ::std::option::Option<
+    pub SendNotification: ::core::option::Option<
         unsafe extern "C" fn(hCdc: USBD_HANDLE_T, bNotification: u8, data: u16) -> ErrorCode_t,
     >,
-}
-#[test]
-fn bindgen_test_layout_USBD_CDC_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_CDC_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_CDC_API>(),
-        24usize,
-        concat!("Size of: ", stringify!(USBD_CDC_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_CDC_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_CDC_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).GetMemSize) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_API),
-            "::",
-            stringify!(GetMemSize)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).init) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_API),
-            "::",
-            stringify!(init)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).SendNotification) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_CDC_API),
-            "::",
-            stringify!(SendNotification)
-        )
-    );
 }
 #[doc = " \\brief CDC class API functions structure.\n  \\ingroup USBD_CDC\n\n  This module exposes functions which interact directly with USB device controller hardware.\n"]
 pub type USBD_CDC_API_T = USBD_CDC_API;
@@ -5174,100 +2018,8 @@ pub struct USBD_API {
     #[doc = "< Version identifier of USB ROM stack. The version is\ndefined as 0x0CHDMhCC where each nibble represents version\nnumber of the corresponding component.\nCC -  7:0  - 8bit core version number\nh - 11:8  - 4bit hardware interface version number\nM - 15:12 - 4bit MSC class module version number\nD - 19:16 - 4bit DFU class module version number\nH - 23:20 - 4bit HID class module version number\nC - 27:24 - 4bit CDC class module version number\nH - 31:28 - 4bit reserved"]
     pub version: u32,
 }
-#[test]
-fn bindgen_test_layout_USBD_API() {
-    const UNINIT: ::std::mem::MaybeUninit<USBD_API> = ::std::mem::MaybeUninit::uninit();
-    let ptr = UNINIT.as_ptr();
-    assert_eq!(
-        ::std::mem::size_of::<USBD_API>(),
-        64usize,
-        concat!("Size of: ", stringify!(USBD_API))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<USBD_API>(),
-        8usize,
-        concat!("Alignment of ", stringify!(USBD_API))
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).hw) as usize - ptr as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(hw)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).core) as usize - ptr as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(core)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).msc) as usize - ptr as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(msc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).dfu) as usize - ptr as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(dfu)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).hid) as usize - ptr as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(hid)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).cdc) as usize - ptr as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(cdc)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).reserved6) as usize - ptr as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(reserved6)
-        )
-    );
-    assert_eq!(
-        unsafe { ::std::ptr::addr_of!((*ptr).version) as usize - ptr as usize },
-        56usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(USBD_API),
-            "::",
-            stringify!(version)
-        )
-    );
-}
-
+#[doc = " \\brief Main USBD API functions structure.\n  \\ingroup Group_USBD\n\n  This structure contains pointer to various USB Device stack's sub-module\n  function tables. This structure is used as main entry point to access\n  various methods (grouped in sub-modules) exposed by ROM based USB device\n  stack.\n"]
 pub type USBD_API_T = USBD_API;
+extern "C" {
+    pub static mut g_pUsbApi: *const USBD_API_T;
+}

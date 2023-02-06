@@ -1,0 +1,3798 @@
+---
+name: LPC1100 Series
+generated_from_pack: true
+pack_file_release: 1.4.0
+variants:
+- name: LPC1101LVUK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1102LVUK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1102UK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1104UK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1110FD20
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000400
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x1000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_4
+- name: LPC1111FDH20/002
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/101
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/103
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1111FHN33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC1112FD20/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FDH20/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FDH28/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHI33/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHI33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN24/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/101
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/103
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112FHN33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112JHI33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112LVFHI33/103
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1112LVFHN24/003
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC1113FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FBD48/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1113FHN33/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC1114FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FBD48/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FBD48/323
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xc000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_48
+- name: LPC1114FBD48/333
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xe000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_56
+- name: LPC1114FDH28/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHI33/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHI33/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/202
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/203
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114FHN33/333
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xe000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_56
+- name: LPC1114FN28/102
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114JHN33/333
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xe000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_56
+- name: LPC1114LVFHI33/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114LVFHN24/103
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1114LVFHN24/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1115FBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC1115FET48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC1115JBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC1115JET48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC1124JBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC1125JBD48/303
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11A02UK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11A04UK
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11A11FHN33/001
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC11A12FBD48/101
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11A12FHN33/101
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11A13FHI33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC11A14FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11A14FHN33/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11C12FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11C14FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11C22FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11C24FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11D14FBD100/302
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11E11FHN33/101
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x2000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_8
+- name: LPC11E12FBD48/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11E13FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC11E14FBD48/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11E14FBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11E14FHN33/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11E36FBD64/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x18000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96
+- name: LPC11E36FHN33/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x18000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96
+- name: LPC11E37FBD48/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11E37FBD64/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11E37HFBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11E66JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11E67JBD100
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11E67JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11E67JBD64
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11E68JBD100
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+- name: LPC11E68JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+- name: LPC11E68JBD64
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+- name: LPC11U12FBD48/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11U12FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x4000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_16
+- name: LPC11U13FBD48/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC11U14FBD48/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U14FET48/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U14FHI33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U14FHN33/201
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U23FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x6000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_24
+- name: LPC11U24FBD48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U24FBD48/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U24FBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U24FET48/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U24FHI33/301
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10001800
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U24FHN33/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x8000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_32
+- name: LPC11U34FBD48/311
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xa000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_40
+- name: LPC11U34FBD48/421
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xc000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_48
+- name: LPC11U34FHN33/311
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xa000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_40
+- name: LPC11U34FHN33/421
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0xc000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_48
+- name: LPC11U35FBD48/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U35FBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U35FET48/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U35FHI33/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U35FHN33/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U36FBD48/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x18000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96
+- name: LPC11U36FBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x18000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96
+- name: LPC11U37FBD48/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11U37FBD64/501
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11U37HFBD64/401
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20004000
+      end: 0x20004800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_128
+- name: LPC11U66JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10002000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x10000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_64
+- name: LPC11U67JBD100
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11U67JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11U67JBD64
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10004000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x20000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_32
+- name: LPC11U68JBD100
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+- name: LPC11U68JBD48
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+- name: LPC11U68JBD64
+  cores:
+  - name: main
+    type: armv6m
+    core_access_options: !Arm
+      ap: 0
+      psel: 0
+  memory_map:
+  - !Ram
+    name: IRAM1
+    range:
+      start: 0x10000000
+      end: 0x10008000
+    cores:
+    - main
+  - !Ram
+    name: IRAM2
+    range:
+      start: 0x20000000
+      end: 0x20000800
+    cores:
+    - main
+  - !Nvm
+    name: IROM1
+    range:
+      start: 0x0
+      end: 0x40000
+    is_boot_memory: true
+    cores:
+    - main
+  flash_algorithms:
+  - lpc1xxx_96_160
+flash_algorithms:
+- name: lpc1xxx_32
+  description: LPC11xx/122x/13xx IAP 32kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlByYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x8000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_4
+  description: LPC11xx/13xx IAP 4kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MACVMRDIgZWAhRqVgFDEgYDpOD0YgRrBHYGkAKA3RZWA0IKVgIGAySDlGSEQAaOBgIEawR2BpACgA0AEg+L34tS1NBAtNRDIgbGApRqxgFDEoYCpOD0YoRrBHaGkAKA3RbGA0IKxgKGAhSDlGSEQAaOhgKEawR2hpACgA0AEg+L34tQYAFEYO0WFoIGjiaEAYoWiJGEAYIWlAGGFpQBihaUAYQELgYRRNMAtNRDIhaGApYKhgKUYUMRBPKEYAkbhHaGkAKBDRbmAzIKxgKGD/IAEw6GAGSEhEAGgoYShGAJm4R2hpACgA0AEg+L3gLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xb1
+  pc_erase_sector: 0x6f
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x1000
+    page_size: 0x100
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_8
+  description: LPC11xx/13xx IAP 8kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlASYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x2000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_16
+  description: LPC11xx/13xx IAP 16kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlAyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x4000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_24
+  description: LPC11xx/13xx IAP 24kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlBSYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x6000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_48
+  description: LPC11xx/122x/13xx IAP 48kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlCyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0xc000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_56
+  description: LPC11xx/122x/13xx IAP 56kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlDSYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0xe000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 100
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_64
+  description: LPC11xx/122x/13xx IAP 64kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlDyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x10000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_96
+  description: LPC11xx/LPC122x IAP 96kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlFyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x18000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_128
+  description: LPC11xx/LPC122x IAP 128kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlHyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x20000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+- name: lpc1xxx_96_32
+  description: LPC11E6x/U6x IAP 128kB Flash
+  default: true
+  instructions: AAsYKAHTwAgVMHBHSklJSElECGBJSAAiAmMBIUFjQmNBY4FjRUkCIEA5CHAQRnBHACBwR/i1QkwyIExEIUYAJRgmYcQUMT5IPk9IRAw8AJG4R2BpACgN0TQgYcQ2SEhEAGggYDZIDDxIRACZuEdgaQAoANABIPi9+LX/98H/ME0ERjIgTUQRxSlGDDEsSC1OLGAPRkhECD2wR2hpACgO0TQgEcUkSCxgSEQAaGhgJEg5RkhECD2wR2hpACgA0AEg+L34tRRGBgAO0QPMYmhAGCFoiRhAGKFoQBjhaEAYIWlAGEBCYGEIPDBG//eJ/xRNMiFNRGhgKWCoYClGFDERTyhGAJG4R2hpACgR0TMgrGBBxQEggAJoYAdISEQAaKhgB0gIPUhEAJm4R2hpACgA0AEg+L3gLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0xd
+  pc_uninit: 0x31
+  pc_program_page: 0xc3
+  pc_erase_sector: 0x79
+  pc_erase_all: 0x35
+  data_section_offset: 0x148
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x20000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+    - size: 0x8000
+      address: 0x18000
+- name: lpc1xxx_96_160
+  description: LPC11E6x/U6x IAP 256kB Flash
+  default: true
+  instructions: AAsYKAHTwAgVMHBHSklJSElECGBJSAAiAmMBIUFjQmNBY4FjRUkCIEA5CHAQRnBHACBwR/i1QkwyIExEIUYAJRwmYcQUMT5IPk9IRAw8AJG4R2BpACgN0TQgYcQ2SEhEAGggYDZIDDxIRACZuEdgaQAoANABIPi9+LX/98H/ME0ERjIgTUQRxSlGDDEsSC1OLGAPRkhECD2wR2hpACgO0TQgEcUkSCxgSEQAaGhgJEg5RkhECD2wR2hpACgA0AEg+L34tRRGBgAO0QPMYmhAGCFoiRhAGKFoQBjhaEAYIWlAGEBCYGEIPDBG//eJ/xRNMiFNRGhgKWCoYClGFDERTyhGAJG4R2hpACgR0TMgrGBBxQEggAJoYAdISEQAaKhgB0gIPUhEAJm4R2hpACgA0AEg+L3gLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0xd
+  pc_uninit: 0x31
+  pc_program_page: 0xc3
+  pc_erase_sector: 0x79
+  pc_erase_all: 0x35
+  data_section_offset: 0x148
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0x40000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0
+    - size: 0x8000
+      address: 0x18000
+- name: lpc1xxx_40
+  description: LPC11xx IAP 40kB Flash
+  default: true
+  instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlCSYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  pc_init: 0x5
+  pc_uninit: 0x29
+  pc_program_page: 0xaf
+  pc_erase_sector: 0x6d
+  pc_erase_all: 0x2d
+  data_section_offset: 0x130
+  flash_properties:
+    address_range:
+      start: 0x0
+      end: 0xa000
+    page_size: 0x400
+    erased_byte_value: 0xff
+    program_page_timeout: 300
+    erase_sector_timeout: 3000
+    sectors:
+    - size: 0x1000
+      address: 0x0

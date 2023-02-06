@@ -1,2 +1,15 @@
 [workspace]
-members = ["lpc11uxx", "lpc11uxx-hal", "pinnacle", "mpu6500", "swd-bitbang", "steam-controller-bsp", "lpc-usbd-rom"]
+members = ["lpc11uxx", "lpc11uxx-hal", "pinnacle", "mpu6500", "swd-bitbang", "steam-controller-bsp", "lpc-usbd-rom", "kettle", "xtask"]
+default-members = ["kettle"]
+
+[profile.dev]
+opt-level = 0
+codegen-units = 16
+debug = true
+lto = false
+
+[profile.release]
+opt-level = "s"
+codegen-units = 1
+debug = true      # symbols are nice and they don't increase the size on Flash
+lto = true        # better optimizations

@@ -22,8 +22,6 @@ fn entry() -> ! {
     let usbd = unsafe { &*(hal::rom_data::RomDriverTable::usb()) };
     let usbd_version = usbd.version;
 
-
-
     defmt::println!("USB driver version: {:#X}", usbd_version);
 
     let mut results = [0u32; 4];

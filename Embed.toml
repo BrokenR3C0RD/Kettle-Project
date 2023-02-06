@@ -1,0 +1,14 @@
+[default.general]
+chip = "LPC11U37H"
+chip_descriptions = [ "LPC1100 Series.yaml" ]
+
+[default.reset]
+halt_afterwards = false
+
+[default.rtt]
+enabled = true
+log_enabled = true
+
+[default.gdb]
+enabled = true
+gdb_connection_string = "127.0.0.1:1337"

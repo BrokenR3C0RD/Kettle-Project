@@ -1,0 +1,1029 @@
+---
+name: LPC1100 Series
+manufacturer: ~
+variants:
+  - name: LPC11U12FBD48/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 16384
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_16
+  - name: LPC11U12FHN33/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 16384
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_16
+  - name: LPC11U13FBD48/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 24576
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_24
+  - name: LPC11U14FBD48/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U14FET48/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U14FHI33/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U14FHN33/201
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268439552
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U23FBD48/301
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268441600
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 24576
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_24
+  - name: LPC11U24FBD48/301
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268441600
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U24FBD48/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U24FBD64/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U24FET48/301
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268441600
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U24FHI33/301
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268441600
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U24FHN33/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 32768
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_32
+  - name: LPC11U34FBD48/311
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 40960
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_40
+  - name: LPC11U34FBD48/421
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 49152
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_48
+  - name: LPC11U34FHN33/311
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 40960
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_40
+  - name: LPC11U34FHN33/421
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 49152
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_48
+  - name: LPC11U35FBD48/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 65536
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_64
+  - name: LPC11U35FBD64/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 65536
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_64
+  - name: LPC11U35FET48/501
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 65536
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_64
+  - name: LPC11U35FHI33/501
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 65536
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_64
+  - name: LPC11U35FHN33/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 65536
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_64
+  - name: LPC11U36FBD48/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 98304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_96
+  - name: LPC11U36FBD64/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 98304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_96
+  - name: LPC11U37FBD48/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 131072
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_128
+  - name: LPC11U37FBD64/501
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 131072
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_128
+  - name: LPC11U37HFBD64/401
+    part: ~
+    cores:
+      - name: main
+        type: armv6m
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268443648
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 0
+            end: 131072
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - lpc1xxx_128
+flash_algorithms:
+  - name: lpc1xxx_16
+    description: LPC11xx/13xx IAP 16kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlAyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 16384
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 100
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_24
+    description: LPC11xx/13xx IAP 24kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlBSYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 24576
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 100
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_32
+    description: LPC11xx/122x/13xx IAP 32kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlByYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 32768
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 100
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_40
+    description: LPC11xx IAP 40kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlCSYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 40960
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 300
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_48
+    description: LPC11xx/122x/13xx IAP 48kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlCyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 49152
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 100
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_64
+    description: LPC11xx/122x/13xx IAP 64kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlDyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 65536
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 300
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_96
+    description: LPC11xx/LPC122x IAP 96kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlFyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 98304
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 300
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []
+  - name: lpc1xxx_128
+    description: LPC11xx/LPC122x IAP 128kB Flash
+    default: true
+    instructions: AAtwR0ZJRUhJRAhgRUgAIgJjASFBY0JjQWOBY0FJAiBAOQhwEEZwRwAgcEf4tT5MMiBMRAAlHyYiRmHCIUYUMTpPIEYAkbhHYGkAKAzRNCAhRmHBMkhIRABo4GAgRgCZuEdgaQAoANABIPi9+LUuTQQLTUQyIGxgKUasYBQxKGAqTg9GKEawR2hpACgN0WxgNCCsYChgIkg5RkhEAGjoYChGsEdoaQAoANABIPi9+LUGABRGDtFhaCBo4mhAGKFoiRhAGCFpQBhhaUAYoWlAGEBC4GEUTTALTUQyIWhgKWCoYClGFDERTyhGAJG4R2hpACgQ0W5gMyCsYChgASCAAuhgB0hIRABoKGEoRgCZuEdoaQAoANABIPi9AADgLgAABAAAAECABEAIAAAA8R//HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 5
+    pc_uninit: 41
+    pc_program_page: 175
+    pc_erase_sector: 109
+    pc_erase_all: 45
+    data_section_offset: 304
+    flash_properties:
+      address_range:
+        start: 0
+        end: 131072
+      page_size: 1024
+      erased_byte_value: 255
+      program_page_timeout: 300
+      erase_sector_timeout: 3000
+      sectors:
+        - size: 4096
+          address: 0
+    cores: []

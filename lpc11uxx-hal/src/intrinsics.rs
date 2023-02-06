@@ -77,9 +77,6 @@ macro_rules! intrinsics_aliases {
 /// * `slower_than_default` - indicates that the override is slower than the
 ///   default implementation.  Currently this just disables the override
 ///   entirely.
-/// * `bootrom_v2` - indicates that the override is only available
-///   on a V2 bootrom or higher.  Only enabled when the feature
-///   `rom-v2-intrinsics` is set.
 /// * `alias` - accepts a list of names to alias the intrinsic to.
 /// * `aeabi` - accepts a list of ARM EABI names to alias to.
 ///
@@ -101,34 +98,6 @@ macro_rules! intrinsics {
         #[allow(dead_code)]
         fn $name( $($argname: $ty),* ) -> $ret {
             $($body)*
-        }
-
-        intrinsics!($($rest)*);
-    };
-
-    (
-        #[bootrom_v2]
-        $(#[$($attr:tt)*])*
-        extern $abi:tt fn $name:ident( $($argname:ident: $ty:ty),* ) -> $ret:ty {
-            $($body:tt)*
-        }
-
-        $($rest:tt)*
-    ) => {
-        // Not exported, but defined so the actual implementation is
-        // considered used
-        #[cfg(not(feature = "rom-v2-intrinsics"))]
-        #[allow(dead_code)]
-        fn $name( $($argname: $ty),* ) -> $ret {
-            $($body)*
-        }
-
-        #[cfg(feature = "rom-v2-intrinsics")]
-        intrinsics! {
-            $(#[$($attr)*])*
-            extern $abi fn $name( $($argname: $ty),* ) -> $ret {
-                $($body)*
-            }
         }
 
         intrinsics!($($rest)*);
